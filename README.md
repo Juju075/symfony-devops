@@ -26,7 +26,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <ul>
     <li><a href="https://github.com/Juju075/php_framework">Symfony custom framework</a></li>
-    <li><a href="#">Microservice ApiPlatform</a></li><br>
+    <li><a href="#">Microservice ApiPlatform</a></li>
     <li><a href="#">Javascript Avance</a></li>
 </ul>
 
