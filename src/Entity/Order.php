@@ -12,7 +12,7 @@ class Order
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    private ?int $id = null;
+    private int $id;
 
     #[ORM\Column(length: 20)]
     private ?string $reference = null;
@@ -20,7 +20,11 @@ class Order
     #[ORM\ManyToOne(inversedBy: 'orders')]
     private ?Coupon $coupon = null;
 
-    public function getId(): ?int
+    #[ORM\ManyToOne(inversedBy: 'orders')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
+
+    public function getId(): int
     {
         return $this->id;
     }
@@ -45,6 +49,18 @@ class Order
     public function setCoupon(?Coupon $coupon): self
     {
         $this->coupon = $coupon;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
