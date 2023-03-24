@@ -1,8 +1,8 @@
 # Symfony 6 + PHP8.1.0 + PHPUnit + Jenkins + Docker
-
+<br/>
 <div align="center"><img src="public/images/cicd-gotestr.png" height="250" alt="image"></div>
 
-<br/>
+
 
 <br/>
 
