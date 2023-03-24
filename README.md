@@ -54,7 +54,9 @@ Docker is a containerization technology that can help to simplify the deployment
 
 Here are some problems that Docker can resolve when deploying applications:<br><br>
 
-Dependency Management: Docker allows you to package your application and its dependencies into a container. This ensures that the application will run consistently,<br>
+<b>Dependency Management: </b><br>
+
+Docker allows you to package your application and its dependencies into a container. This ensures that the application will run consistently,<br>
 regardless of the environment in which it is deployed.
 
 <b>Portability:</b> <br>
