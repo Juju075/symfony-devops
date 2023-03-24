@@ -24,7 +24,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br>
 
-## Hosting process
+## Deployment in casual Hosting 
 
 
 <br/>
