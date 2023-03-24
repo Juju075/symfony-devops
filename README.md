@@ -14,6 +14,8 @@ Unit tests in Github Action CI/CD (discovery..)
 
 ### Project in progress...
 
+## UML
+
 ## PHP Unit
 
 <h3>How to benefit from PHPUnit?</h3>
