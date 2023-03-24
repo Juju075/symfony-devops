@@ -14,7 +14,7 @@ class Order
     #[ORM\Column]
     private int $id;
 
-    #[ORM\Column(length: 20)]
+    #[ORM\Column(length: 20, unique: true)]
     private ?string $reference = null;
 
     #[ORM\ManyToOne(inversedBy: 'orders')]
