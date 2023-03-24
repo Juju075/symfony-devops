@@ -20,6 +20,12 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br>
 
+Testing your code is crucial to ensure that it works as intended, meets the requirements of the end-users, and is <br>
+free of bugs and errors. By catching issues early in the development process, testing can save time and resources <br>
+in the long run, improve code quality, and boost confidence in the reliability and functionality of the code.<br>
+Ultimately, testing is an essential part of the software development process that can help you deliver<br>
+a high-quality product that meets the needs of your users.
+
 <iframe height="300" width="600">
 
 </iframe>
