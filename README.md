@@ -16,7 +16,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 ## PHP Unit
 
-<h3>How to benefice of PHP Unit</h3>
+<h3>How to benefit from PHPUnit?</h3>
 
 <br>
 
