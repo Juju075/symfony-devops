@@ -15,7 +15,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 ### Project in progress...
 
-## (PHP Unit)
+## PHP Unit
 
 #### Controllers
 #### Entities
@@ -23,7 +23,15 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br>
 
-## (Jenkins)
+## Jenkins
+
+## What is jenkins
+<p>
+Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD) pipelines. It provides a platform for developers to build, test, and deploy their code in an automated and systematic way.
+
+Jenkins is highly configurable and supports a wide range of plugins, making it easy to integrate with various tools and technologies. It also has a large and active community that contributes to its development and support.
+
+With Jenkins, you can automate the build and testing of their code, and deploy it to production automatically or with minimal manual intervention. This helps to improve the speed, quality, and reliability of software development and deployment processes.</p>
 
 <br>
 
