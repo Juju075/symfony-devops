@@ -12,11 +12,11 @@ Unit tests in Github Action CI/CD (discovery..)
 
 ### Project in progress...
 
-## Unit tests (PHP Unit)
+## (PHP Unit)
 
-### Controllers
-### Entities
-### Repositories
+#### Controllers
+#### Entities
+#### Repositories
 
 <br/>
 
