@@ -51,17 +51,25 @@ With Jenkins, you can automate the build and testing of their code, and deploy i
 
 ### What problems does Docker resolve when it's time to deploy my application?
 
-Docker is a containerization technology that can help to simplify the deployment process of applications. Here are some problems that Docker can resolve when deploying applications:
 
-Dependency Management: Docker allows you to package your application and its dependencies into a container. This ensures that the application will run consistently, regardless of the environment in which it is deployed.
+Docker is a containerization technology that can help to simplify the deployment process of applications. <br>
 
-Portability: Docker containers are lightweight and portable, meaning that you can easily move them between different environments, such as from a developer's machine to a production server.
+Here are some problems that Docker can resolve when deploying applications:<br><br>
 
-Consistency: Docker ensures that the same environment is used in development, testing, and production, which reduces the likelihood of issues arising due to differences between environments.
+Dependency Management: Docker allows you to package your application and its dependencies into a container. This ensures that the application will run consistently,<br>
+regardless of the environment in which it is deployed.
 
-Scalability: Docker can help to simplify scaling by allowing you to quickly spin up additional instances of your application in response to increased demand.
+Portability: <br>
+Docker containers are lightweight and portable, meaning that you can easily move them between different environments, such as from a developer's machine to a production server.
 
-Isolation: Docker containers provide a level of isolation, meaning that if one container fails or has a security issue, it will not affect other containers running on the same host.
+Consistency: <br>
+Docker ensures that the same environment is used in development, testing, and production, which reduces the likelihood of issues arising due to differences between environments.
+
+Scalability: <br>
+Docker can help to simplify scaling by allowing you to quickly spin up additional instances of your application in response to increased demand.
+
+Isolation: <br>
+Docker containers provide a level of isolation, meaning that if one container fails or has a security issue, it will not affect other containers running on the same host.<br>
 
 Overall, Docker can help to simplify the deployment process of applications by providing a consistent and portable environment, which can reduce the likelihood of issues arising and make it easier to scale applications.
 
