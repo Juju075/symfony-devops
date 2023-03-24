@@ -24,6 +24,10 @@
 
 # Other projects:
 
-<a href="https://github.com/Juju075/php_framework">Symfony custom framework</a>
+<ul>
+    <li><a href="https://github.com/Juju075/php_framework">Symfony custom framework</a></li>
+    <li><a href="#">Microservice ApiPlatform</a></li>
+</ul>
+
 <br>
-<a href="#">Microservice ApiPlatform</a>
+
