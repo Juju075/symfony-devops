@@ -1,20 +1,114 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}Title here{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/MAMP/htdocs/symfony-devops/src/Controller/MainController.php'|file_link(0) }}">src/Controller/MainController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/MAMP/htdocs/symfony-devops/templates/main/index.html.twig'|file_link(0) }}">templates/main/index.html.twig</a></code></li>
-    </ul>
-</div>
+<p>Acceuil</p>
+    <!-- ///////////////////////////////// -->
+    <!-- .SIDEBAR-->
+    <nav class="sidebar close">
+        <!-- Section Header -->
+        <header>
+            <!-- 1 row -->
+            <div class="image-text">
+                <!-- element: Logo  -->
+                <span class="image">
+            <image src="/images/logo.png" alt="Logo"></image>
+          </span>
+                <!-- element: innerText -->
+                <div class="text header-text">
+                    <span class="name">CodingLab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+            <!-- element: chevron right -->
+            <i class="bx bxs-chevron-right toggle"></i>
+        </header>
+        <!-- fin section -->
+        <!-- ///////////////////////////////// -->
+        <!-- Section Container Block Menu -->
+        <div class="menu-bar">
+            <!-- 1 row:  Menu -->
+            <div class="menu">
+                <!-- 1 element: Search -->
+                <li class="search-box">
+                    <i class="bx bx-search-alt-2 icon"></i>
+                    <input type="search" placeholder="Search..." />
+                </li>
+                <!-- Liste menu <UL -->
+                <ul class="menu-links">
+                    <!-- 1 element: Link -->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-home icon"></i>
+                            <span class="text nav-text">Dashboard</span></a
+                        >
+                    </li>
+                    <!---->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-bar-chart-alt-2 icon"></i>
+                            <span class="text nav-text">Revenue</span></a
+                        >
+                    </li>
+                    <!---->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-bell icon"></i>
+                            <span class="text nav-text">Notification</span></a
+                        >
+                    </li>
+                    <!---->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-pie-chart-alt icon"></i>
+                            <span class="text nav-text">Analytics</span></a
+                        >
+                    </li>
+                    <!---->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-heart icon"></i>
+                            <span class="text nav-text">Likes</span></a
+                        >
+                    </li>
+                    <!---->
+                    <li class="nav-link">
+                        <a href="#"
+                        ><i class="bx bx-wallet icon"></i>
+                            <span class="text nav-text">Wallets</span></a
+                        >
+                    </li>
+                    <!---->
+                </ul>
+                <!-- fin list menu -->
+            </div>
+            <!-- Partie Bottom du menu exit et toogle light -->
+            <div class="bottom-content">
+                <!-- element:  -->
+                <li class="">
+                    <a href="#"
+                    ><i class="bx bx-log-out icon"></i
+                        ><span class="text nav-text">Log out</span></a
+                    >
+                </li>
+                <!-- element: -->
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <!--speudo element toggle switch -->
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+            <!-- fin bottom -->
+        </div>
+        <!-- fin section -->
+        <!-- ///////////////////////////////// -->
+    </nav>
+    <script src="/script.js"></script>
 {% endblock %}
