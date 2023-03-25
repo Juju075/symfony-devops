@@ -98,7 +98,7 @@ Overall, Docker can help to simplify the deployment process of applications by p
 
 ### What i learned?
 
-> test and deploy
+> use of symfony 6 release, test and deploy my app.
 >
 > [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 
