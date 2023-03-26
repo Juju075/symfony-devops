@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\SlugTrait;
 use App\Repository\CategoryRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -32,6 +33,8 @@ class Category
         $this->categories = new ArrayCollection();
         $this->products = new ArrayCollection();
     }
+
+    use SlugTrait;
 
     public function getId(): int
     {

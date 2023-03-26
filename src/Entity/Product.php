@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\SlugTrait;
 use App\Entity\Traits\Timestampable;
 use App\Repository\ProductRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -46,6 +47,7 @@ class Product
     }
 
     use Timestampable;
+    use SlugTrait;
 
     public function getId(): int
     {
