@@ -107,7 +107,7 @@ Overall, Docker can help to simplify the deployment process of applications by p
 # Other projects:
 
 <ul>
-    <li><a href="https://github.com/Juju075/php_framework">custom framework inspired y Symfony</a></li>
+    <li><a href="https://github.com/Juju075/php_framework">custom framework inspired by Symfony</a></li>
     <li><a href="https://github.com/Juju075/api-rest">Api REST (ApiPlatform)</a></li>
     <li><a href="#">Javascript Advanced</a></li>
     <li><a href="#">custom Framework inspired by React</a></li>
