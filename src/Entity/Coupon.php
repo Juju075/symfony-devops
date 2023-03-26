@@ -45,6 +45,7 @@ class Coupon
     public function __construct()
     {
         $this->orders = new ArrayCollection();
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     use Timestampable;

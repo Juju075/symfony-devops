@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\Timestampable;
 use App\Repository\ProductRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -41,7 +42,10 @@ class Product
     {
         $this->images = new ArrayCollection();
         $this->orderDetails = new ArrayCollection();
+        $this->createdAt = new \DateTimeImmutable();
     }
+
+    use Timestampable;
 
     public function getId(): int
     {

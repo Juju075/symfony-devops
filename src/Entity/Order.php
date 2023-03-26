@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\Timestampable;
 use App\Repository\OrderRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -32,7 +33,10 @@ class Order
     public function __construct()
     {
         $this->orderDetails = new ArrayCollection();
+        $this->createdAt = new \DateTimeImmutable();
     }
+
+    use Timestampable;
 
     public function getId(): int
     {
