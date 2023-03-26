@@ -10,14 +10,13 @@
         {% block stylesheets %}
         {% endblock %}
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
         <script src="{{ asset('assets/js/scripts.js') }}"></script>
         {% block javascripts %}
         {% endblock %}
     </head>
     <body>
-        {% include "_partial/_nav.html.twig" %}
+        {% include "partial/_nav.html.twig" %}
         {% block body %}{% endblock %}
-        {% include "_partial/_footer.html.twig" %}
+        {% include "partial/_footer.html.twig" %}
     </body>
 </html>
