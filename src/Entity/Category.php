@@ -19,15 +19,6 @@ class Category
     #[ORM\Column(length: 100)]
     private ?string $name = null;
 
-    #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')]
-    #[ORM\JoinColumn(onDelete: 'CASCADE')]
-    private ?self $parent;
-
-    #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
-    private Collection $categories;
-
-    #[ORM\OneToMany(mappedBy: 'category', targetEntity: Product::class)]
-    private Collection $products;
 
     public function __construct()
     {
@@ -36,6 +27,27 @@ class Category
     }
 
     use SlugTrait;
+
+
+
+
+
+    // voir doc ORM
+
+    #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
+    private Collection $categories; //category
+
+    #[ORM\OneToMany(mappedBy: 'category', targetEntity: Product::class)]
+    private Collection $products;
+
+    #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')] //category
+    #[ORM\JoinColumn(onDelete: 'CASCADE')]
+    private ?self $parent;
+
+
+
+
+
 
     public function getId(): int
     {
@@ -59,9 +71,9 @@ class Category
         return $this->parent;
     }
 
-    // must be a namespace
     public function setParent(?self $parent): ?self
     {
+        var_dump($parent);
         $this->parent = $parent;
 
         return $this;

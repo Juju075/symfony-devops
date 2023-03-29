@@ -7,7 +7,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
-class CategoryFixture extends Fixture
+class CategoryFixtures extends Fixture
 {
     public function __construct(private readonly SluggerInterface $slugger)
     {
@@ -18,8 +18,8 @@ class CategoryFixture extends Fixture
     public function load(ObjectManager $manager): void
     {
         $items = [
-            'informatique' => ['Laptops', 'Screen', 'Mouse'],
-            'mode' => ['Man', 'Woman', 'Child']
+            'Informatique' => ['Laptops', 'Screen', 'Mouse'],
+            'Mode' => ['Man', 'Woman', 'Child']
         ];
         foreach ($items as $category => $array) {
 
@@ -39,8 +39,7 @@ class CategoryFixture extends Fixture
         $category->setName($name);
         $category->setSlug($this->slugger->slug($category->getName())->lower());
         if ($parent) {
-            $category->setParent($category); // will save this category's instance category(name,slug)
-            //erreur parent_id doit etre la
+            $category->setParent($category);// will save this category's instance category(name,slug)
         }
         $manager->persist($category);
         return $category;
