@@ -3,6 +3,7 @@
 namespace App\Entity\Traits;
 
 use Doctrine\ORM\Mapping as ORM;
+use symfony\Component\String\Slugger\SluggerInterface;
 
 trait SlugTrait
 {
@@ -11,16 +12,17 @@ trait SlugTrait
     private string $slug;
 
 
-    public function getSlug(): ?String
-    {
-        return $this->slug;
-    }
 
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
 
         return $this;
+    }
+
+    public function getSlug(): ?String
+    {
+        return $this->slug;
     }
 }
 

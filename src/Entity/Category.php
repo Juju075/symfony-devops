@@ -20,7 +20,8 @@ class Category
     private ?string $name = null;
 
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')]
-    private ?self $parent = null;
+    #[ORM\JoinColumn(onDelete: 'CASCADE')]
+    private ?self $parent;
 
     #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
     private Collection $categories;
@@ -58,7 +59,8 @@ class Category
         return $this->parent;
     }
 
-    public function setParent(?self $parent): self
+    // must be a namespace
+    public function setParent(?self $parent): ?self
     {
         $this->parent = $parent;
 
