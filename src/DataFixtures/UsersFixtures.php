@@ -13,7 +13,7 @@ class UsersFixtures extends Fixture
 {
     public function __construct(
         private readonly UserPasswordHasherInterface $passwordEncoder,
-        private SluggerInterface $slugger)
+        private SluggerInterface                     $slugger)
     {
     }
 
@@ -21,20 +21,13 @@ class UsersFixtures extends Fixture
     {
 
 
-
-        $manager->persist($user);
-
-
         $faker = Faker\Factory::create('en_US');
-        for ($usr = 1; $usr <= 5; $usr++)
-        {
+        for ($usr = 1; $usr <= 5; $usr++) {
             $user = new User();
-
-            if ($usr=1)
-            {
-                $role = ['ROLE_ADMIN','admin'];
-            }else{
-                $role  = ['ROLE_USER', 'secret'];
+            if ($usr = 1) {
+                $role = ['ROLE_ADMIN', 'admin'];
+            } else {
+                $role = ['ROLE_USER', 'secret'];
             }
 
             $faker = Faker\Factory::create('en_US');
@@ -46,10 +39,10 @@ class UsersFixtures extends Fixture
             $user->setFirstname($faker->firstName);
             $user->setAddress($faker->streetAddress);
             $user->setCity($faker->city);
-            $user->setZipcode(str_replace(' ','', $faker->postcode));
-            $user->setPassword($this->passwordEncoder->hashPassword($user,$role[2]));
+            $user->setZipcode(str_replace(' ', '', $faker->postcode));
+            $user->setPassword($this->passwordEncoder->hashPassword($user, $role[2]));
+            $manager->persist($user);
         };
-
         $manager->flush();
     }
 }

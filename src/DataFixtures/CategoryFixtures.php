@@ -9,6 +9,9 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 
 class CategoryFixtures extends Fixture
 {
+    private int $counter = 1;
+
+
     public function __construct(private readonly SluggerInterface $slugger)
     {
     }
@@ -42,6 +45,11 @@ class CategoryFixtures extends Fixture
             $category->setParent($category);// will save this category's instance category(name,slug)
         }
         $manager->persist($category);
+
+        //stock la category (reference) mise en memoire d'un element
+        $this->addReference('cat-'. $this->counter, $category);
+        $this->counter++;
+
         return $category;
     }
 }
