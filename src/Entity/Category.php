@@ -17,7 +17,14 @@ class Category
     private int $id;
 
     #[ORM\Column(length: 100)]
-    private ?string $name = null;
+    private string $name;
+
+    #[ORM\Column]
+    private string $categoryOrder;
+
+
+
+
 
 
     public function __construct()
@@ -86,6 +93,18 @@ class Category
     {
         return $this->categories;
     }
+
+    public function getCategoryOrder(): ?int
+    {
+        return $this->categoryOrder;
+    }
+
+    public function setCategoryOrder(int $categoryOrder): self
+    {
+        $this->categoryOrder = $categoryOrder;
+        return $this;
+    }
+
 
     public function addCategory(self $category): self
     {
