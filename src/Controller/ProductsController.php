@@ -20,11 +20,11 @@ class ProductsController extends AbstractController
         ]);
     }
 
-    //DI Abstract controller
+    //Slug by DI Abstract controller
     #[Route('/{slug}', name: 'details')]
     public function details(Product $product): Response
     {
-        return $this->render('products/slug.html.twig');
+        return $this->render('products/details.html.twig',compact('product'));
     }
 
 }
