@@ -18,6 +18,7 @@
         {% include "partial/_nav.html.twig" %}
         {% if app.user and app.user.isVerified == false %}
             <p>utilisateur non connecte</p>
+            <p>renvoyer le lien d'activattion</p>
         {% endif %}
         {% block body %}{% endblock %}
         {% include "partial/_footer.html.twig" %}
