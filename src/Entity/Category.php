@@ -22,11 +22,6 @@ class Category
     #[ORM\Column]
     private string $categoryOrder;
 
-
-
-
-
-
     public function __construct()
     {
         $this->categories = new ArrayCollection();
