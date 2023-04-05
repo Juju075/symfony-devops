@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/', name: 'index')]
+    #[Route('/', name: 'main')]
     public function index(CategoryRepository $categoryRepository): Response
     {
         //findBy c all

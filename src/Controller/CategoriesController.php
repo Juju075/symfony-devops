@@ -11,12 +11,12 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/category', name: 'category_')]
 class CategoriesController extends AbstractController
 {
-
-    //index don't exist throw 404    page not foune
     #[Route('/{slug}', name: 'list')]
     public function list(Category $category): Response
     {
-        return $this->render('category/list.html.twig',compact('category'));
+        //fetch products from category
+        $products = $category->getProducts();
+        return $this->render('category/list.html.twig',compact('category', 'products'));
     }
 
 }
