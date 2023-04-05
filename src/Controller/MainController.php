@@ -13,10 +13,13 @@ class MainController extends AbstractController
     public function index(CategoryRepository $categoryRepository): Response
     {
         //findBy c all
-        return $this->render('main/index.html.twig', [
-            'category' =>
-                $categoryRepository->findBy([],
-                    ['categoryOrder' => 'asc'])
-        ]);
+        return $this->render(
+            'main/index.html.twig',
+            [
+                'categories' =>
+                    $categoryRepository->findBy([], ['categoryOrder' => 'asc']
+                    )
+            ]
+        );
     }
 }
