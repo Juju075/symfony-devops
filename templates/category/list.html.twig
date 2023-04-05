@@ -2,11 +2,26 @@
 {%  block title  %}
 {%  endblock %}
 {%  block body %}
+    {{ dump() }}
+
     <main class="container">
         <section class="row">
             <div class="col-12">
                 <h1>List of category {{ category.name }}</h1>
+                <br>
+                   {# load ProductsFixtures #}
+                {% for product in products %}
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </section>
+
     </main>
+
 {%  endblock %}
