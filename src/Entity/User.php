@@ -7,6 +7,7 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\Boolean;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -17,10 +18,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(type: 'integer')]
     private int $id;
 
-    #[ORM\Column(length: 180, unique: true)]
+    #[ORM\Column(type: 'string', length: 180, unique: true)]
     private string $email;
 
     #[ORM\Column]
@@ -29,23 +30,28 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @var string The hashed password
      */
-    #[ORM\Column]
+    #[ORM\Column(type: 'string')]
     private string $password;
 
     #[ORM\Column(length: 100)]
     private ?string $lastname = null;
 
-    #[ORM\Column(length: 100)]
+    #[ORM\Column(type: 'string',length: 100)]
     private ?string $firstname = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(type: 'string',length: 255)]
     private ?string $address = null;
 
-    #[ORM\Column(length: 5)]
+    #[ORM\Column(type: 'string',length: 5)]
     private ?string $zipcode = null;
 
-    #[ORM\Column(length: 150)]
+    #[ORM\Column(type: 'string',length: 150)]
     private ?string $city = null;
+
+    #[ORM\Column(type: 'boolean')]
+    private bool $is_verified = false;
+
+
 
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Order::class)]
     private Collection $orders;
@@ -82,7 +88,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public function getUserIdentifier(): string
     {
-        return (string) $this->email;
+        return (string)$this->email;
     }
 
     /**
@@ -118,6 +124,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
+    public function getIsVerified(): ?bool
+    {
+        return $this->is_verified;
+    }
+
+    public function setIsVerified(bool $is_verified): self
+    {
+        $this->is_verified = $is_verified;
+        return $this;
+    }
+
 
     /**
      * @see UserInterface
