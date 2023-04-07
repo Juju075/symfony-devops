@@ -6,9 +6,6 @@
     <p>Acceuil</p>
 
     <main class="container">
-
-        {{ dump(categories) }}
-
         {% for category in categories %}
             {% if category.parent == null %}
                 <h2>{{ category.name }}</h2>

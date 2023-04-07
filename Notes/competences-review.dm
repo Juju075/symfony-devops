@@ -65,6 +65,8 @@ transfert de donne si meme signature
 function  B(x) call return  A(x)
 
 //
-au lieu de if(instruction) pour un return
+au lieu de if  pour un return
 return Affirmation?     :bool
 ---
+faire un ternaire au lieu d'un if/else
+on peut faire un ternaire
