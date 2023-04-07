@@ -3,17 +3,20 @@
 namespace App\Entity\Traits;
 
 
+use Doctrine\DBAL\Types\Types;
 use Monolog\DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
+
+
 
 trait Timestampable
 {
 
-    #[ORM\Column(type: 'datetime_immutable', options: ['default' => 'CURRENT_TIMESTAMP'])]
+    #[ORM\Column(type: Types::DATETIME_IMMUTABLE, nullable: false , options: ['default' => 'CURRENT_TIMESTAMP'])]
     private ?\DateTimeInterface $createdAt;
 
-    #[ORM\Column(type: 'datetime_immutable', options: ['default' => 'CURRENT_TIMESTAMP'])]
-    private ?\DateTimeInterface $updatedAt;
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true, options: ['default' => 'CURRENT_TIMESTAMP'])]
+    private ?\DateTimeInterface $updatedAt = null;
 
 
     public function getCreatedAt(): ?\DateTimeInterface
