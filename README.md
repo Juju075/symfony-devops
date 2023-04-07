@@ -12,7 +12,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br/>
 
-### Project in progress... Fixtures
+### Project in progress... Authentification verification
 
 ## <a href="#">symfony-devops.bempime-kheve.com</a>
 
