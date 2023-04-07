@@ -93,11 +93,18 @@ class RegistrationController extends AbstractController
         ]);
     }
 
+        //TODO a finir
     #[Route('/verif/{token}', name: 'verify_user')]
     public function verifUser($token, JWTService $JWTService): Response
     {
         $var = $JWTService->getPayload($token);
-        dd($token);
+
+        if ($var->isValid($token) && !jwt->isExpired($token)&& $var->check($token,'secretphrase'))
+        {
+            $this->addFlash('danger', 'le token est invalide ou a expire');
+            $this->redirectToRoute('app_login');
+
+        }
     }
 }
 

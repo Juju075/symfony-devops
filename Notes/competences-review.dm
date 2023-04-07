@@ -9,15 +9,30 @@ Parent himself
 ---
 Attributes ORM PHP8
 ---
+Fixtures
 
 ---
+
 Routing controller
 ---
-JWT token ( c super reloud utilise le bundle)
+fonctionnement JWT token ( c super reloud utilise le bundle)
 generation du token
 decode du token
+verification token
 ---
-Activation de cpt 0>1
+fonctionnement Recuperation mot de pass
+---
+Page error
+
+---
+Voter
+
+---
+Administrateur sans bundle
+
+---
+---
+Activation de cpt user  0 > 1
 Sendmail  | registercontroller (service responsaility mailer)
 Templatemail de symfony
 **
