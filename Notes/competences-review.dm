@@ -8,6 +8,8 @@ Relation composition
 Parent himself
 ---
 Attributes ORM PHP8
+_error/404
+
 ---
 Fixtures
 
@@ -23,6 +25,8 @@ verification token
 fonctionnement Recuperation mot de pass
 ---
 Page error
+composer require symfony/twig-pack
+bundel/TwigBundel/Exception
 
 ---
 Voter
