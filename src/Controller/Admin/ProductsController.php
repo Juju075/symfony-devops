@@ -21,7 +21,10 @@ class ProductsController extends AbstractController
     #[Route('/add', name: 'add')]
     public function add(): Response
     {
-        return $this->render('admin/products/index.html.twig');
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+        //formulaire ici
+
+        return $this->render('admin/products/add.html.twig', compact('form'));
     }
 
     #[Route('/edit/{id}', name: 'edit')]
