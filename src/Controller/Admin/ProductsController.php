@@ -29,13 +29,13 @@ class ProductsController extends AbstractController
     {
         // check for "product" access: calls all voters
         $this->denyAccessUnlessGranted('PRODUCT_EDIT', $product);
-        //form edit
-        return $this->render('');
+        return $this->render('admin/products/index.html.twig');
     }
 
     #[Route('/delete/{id}', name: 'delete')]
     public function delete(Product $product): Response
     {
+        $this->denyAccessUnlessGranted('PRODUCT_DELETE', $product);
         return $this->render('admin/products/index.html.twig');
     }
 }
