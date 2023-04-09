@@ -29,12 +29,20 @@ composer require symfony/twig-pack
 bundel/TwigBundel/Exception
 
 ---
-Voter
-
+Gestion des permissions avec les voters
+Voter methode de restriction (Permission par action pour une methode )
+vs authorisation par Role
+Voters to Check User Permissions
+https://writecode.fr/tutoriel/la-gestion-des-permissions-avec-les-voters
 ---
 Administrateur sans bundle
 
 ---
+FormRype
+createForm(FormType::class, $entity)
+
+imbrication (list) category/product
+
 ---
 Activation de cpt user  0 > 1
 Sendmail  | registercontroller (service responsaility mailer)
