@@ -39,7 +39,7 @@ class ProductsController extends AbstractController
             $slug = $slugger->slug($product->getName());
             $product->setSlug($slug);
             //on arrondi le prix getData()
-            $price = $product->getPrice()*100;
+            $price = $product->getPrice() * 100;
             $product->setPrice($price);
 
             $entityManager->persist($product);
@@ -58,13 +58,16 @@ class ProductsController extends AbstractController
     }
 
     #[Route('/edit/{id}', name: 'edit')]
-    public function edit(Product $product,Request $request, EntityManagerInterface $entityManager, SluggerInterface $slugger): Response
+    public function edit(
+        Product                $product,
+        Request                $request,
+        EntityManagerInterface $entityManager,
+        SluggerInterface       $slugger): Response
     {
         // check for "product" access: calls all voters
         $this->denyAccessUnlessGranted('PRODUCT_EDIT', $product);
 
         //fields prepopule
-
 
 
         // 1 - Build the form
@@ -79,7 +82,7 @@ class ProductsController extends AbstractController
             $slug = $slugger->slug($product->getName());
             $product->setSlug($slug);
             //on arrondi le prix getData()
-            $price = $product->getPrice()*100;
+            $price = $product->getPrice() * 100;
             $product->setPrice($price);
 
             $entityManager->persist($product);
@@ -90,21 +93,8 @@ class ProductsController extends AbstractController
         }
 
 
-
         // 2 - Render the form   FormInterface
         return $this->renderForm('admin/products/edit.html.twig', compact('productForm'));
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         return $this->render('admin/products/edit.html.twig');
