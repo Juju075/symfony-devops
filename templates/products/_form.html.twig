@@ -3,5 +3,15 @@
 {% block title %}Hello ProductsController!{% endblock %}
 
 {% block body %}
-    Ajouter un produit
+    ici formulaire
+    {{ form(productForm) }}
+        {{ form_widget(productForm.name) }}
+        {#    row lael inclu #}
+        {{ form_row(productForm.description) }}
+    {{ form_row(productForm.category) }}
+        {{ form_row(productForm.price) }}
+        {{ form_row(productForm.stock) }}
+    <button type="submit">Valid</button>
+    {{ form_end(productForm) }}
+    {# theme du formulaire dans twig.yaml   #}
 {% endblock %}

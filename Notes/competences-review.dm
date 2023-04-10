@@ -78,3 +78,11 @@ return Affirmation?     :bool
 ---
 faire un ternaire au lieu d'un if/else
 on peut faire un ternaire
+---
+Apprendre ausi custom QueryBuilder de DOCTRINE
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.14/reference/query-builder.html
+createQueryBuilder()
+
+
+'option_queryuilder' dans formulaire
+

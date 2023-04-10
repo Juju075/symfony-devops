@@ -3,13 +3,16 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Product;
+use App\Form\ProductFormType;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 
-
-#[Route('/admin/products','admin_products')]
+#[Route('/admin/products', 'admin_products')]
 class ProductsController extends AbstractController
 {
     #[Route('/admin/products', name: 'admin_products')]
@@ -19,12 +22,29 @@ class ProductsController extends AbstractController
     }
 
     #[Route('/add', name: 'add')]
-    public function add(): Response
+    public function add(Request $request, EntityManagerInterface $entityManager, SluggerInterface $slugger): Response
     {
         $this->denyAccessUnlessGranted('ROLE_ADMIN');
-        //formulaire ici
 
-        return $this->render('admin/products/add.html.twig', compact('form'));
+        $product = new Product();
+        // 1 - Build the form
+        $productForm = $this->createForm(ProductFormType::class, $product);
+
+        // 2 - Render the form   FormInterface
+        return $this->renderForm('admin/products/add.html.twig', compact('productForm'));
+
+        // FormInterface
+        //return $this->render($productForm);
+
+
+        // 3 - Process the form
+        $productForm->handleRequest($request);
+        if ($productForm->isSubmitted() && $productForm->isValid()) {
+        }
+        }
+
+
+        //return $this->render('admin/products/add.html.twig', compact('productForm'));
     }
 
     #[Route('/edit/{id}', name: 'edit')]
