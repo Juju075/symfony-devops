@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+   Editer un produit
+    {{ include "admin/products/_form.html.twig" with {'button_label': 'Edit'} }
+{% endblock %}

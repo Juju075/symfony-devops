@@ -62,7 +62,16 @@ https://www.yamllint.com/
 ---
 Custom repository (querybuilder)
 ---
-Form imbrique  list
+Form imbrique  list & querybuilder
+
+---
+Form Button dynamique
+
+<button type="submit">{{ button_label | default()}}</button>
+{{ include "admin/products/_form.html.twig" with {'button_label': 'Modifier'} }
+
+Use the with tag to create a new inner scope.
+Variables set within this scope are not visible outside of the scope:
 ---
 Form collection images
 ---

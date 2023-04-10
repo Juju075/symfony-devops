@@ -8,10 +8,11 @@
         {{ form_widget(productForm.name) }}
         {#    row lael inclu #}
         {{ form_row(productForm.description) }}
-    {{ form_row(productForm.category) }}
+        {{ form_row(productForm.category) }}
         {{ form_row(productForm.price) }}
         {{ form_row(productForm.stock) }}
-    <button type="submit">Valid</button>
+        {#  On fait un bouton dynamique create edit  #}
+        <button type="submit">{{ button_label | default()}}</button>
     {{ form_end(productForm) }}
     {# theme du formulaire dans twig.yaml   #}
 {% endblock %}

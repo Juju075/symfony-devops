@@ -30,29 +30,84 @@ class ProductsController extends AbstractController
         // 1 - Build the form
         $productForm = $this->createForm(ProductFormType::class, $product);
 
-        // 2 - Render the form   FormInterface
-        return $this->renderForm('admin/products/add.html.twig', compact('productForm'));
-
-        // FormInterface
-        //return $this->render($productForm);
-
-
         // 3 - Process the form
         $productForm->handleRequest($request);
-        if ($productForm->isSubmitted() && $productForm->isValid()) {
-        }
+
+        if ($productForm->isSubmitted() && $productForm->isValid()) // Form Data Hydration
+        {
+            //on genere le slug d'apres le name
+            $slug = $slugger->slug($product->getName());
+            $product->setSlug($slug);
+            //on arrondi le prix getData()
+            $price = $product->getPrice()*100;
+            $product->setPrice($price);
+
+            $entityManager->persist($product);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Produit ajouter avec succcess');
+            return $this->redirectToRoute('admin_products_index');
         }
 
+        // 2 - Render the form   FormInterface
+        return $this->renderForm('admin/products/add.html.twig', compact('productForm'));
+        // FormInterface
+        //return $this->render($productForm);
 
         //return $this->render('admin/products/add.html.twig', compact('productForm'));
     }
 
     #[Route('/edit/{id}', name: 'edit')]
-    public function edit(Product $product): Response
+    public function edit(Product $product,Request $request, EntityManagerInterface $entityManager, SluggerInterface $slugger): Response
     {
         // check for "product" access: calls all voters
         $this->denyAccessUnlessGranted('PRODUCT_EDIT', $product);
-        return $this->render('admin/products/index.html.twig');
+
+        //fields prepopule
+
+
+
+        // 1 - Build the form
+        $productForm = $this->createForm(ProductFormType::class, $product);
+
+        // 3 - Process the form
+        $productForm->handleRequest($request);
+
+        if ($productForm->isSubmitted() && $productForm->isValid()) // Form Data Hydration
+        {
+            //on genere le slug d'apres le name
+            $slug = $slugger->slug($product->getName());
+            $product->setSlug($slug);
+            //on arrondi le prix getData()
+            $price = $product->getPrice()*100;
+            $product->setPrice($price);
+
+            $entityManager->persist($product);
+            $entityManager->flush();
+
+            $this->addFlash('success', 'Produit ajouter avec succcess');
+            return $this->redirectToRoute('admin_products_index');
+        }
+
+
+
+        // 2 - Render the form   FormInterface
+        return $this->renderForm('admin/products/edit.html.twig', compact('productForm'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return $this->render('admin/products/edit.html.twig');
     }
 
     #[Route('/delete/{id}', name: 'delete')]
