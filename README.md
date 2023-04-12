@@ -15,6 +15,7 @@ Unit tests in Github Action CI/CD (discovery..)
 ### Project in progress... Authentification verification
 
 ## <a href="#">symfony-devops.bempime-kheve.com</a>
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 
 ## Topics<br>
 
@@ -101,6 +102,7 @@ Overall, Docker can help to simplify the deployment process of applications by p
 > use of symfony 6 release, test and deploy my app.
 >
 > [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
+> https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 
 <a href="https://github.com/Juju075/symfony-devops#symfony-6--php810---phpunit--jenkins--docker">Top of page</a>
 
