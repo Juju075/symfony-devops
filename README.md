@@ -12,12 +12,12 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br/>
 
-### Project in progress... Docker  
+### Project in progress... Docker  <br><br>
 
-Demo: <a href="#">symfony-devops.bempime-kheve.com</a>
-Source: https://github.com/Juju075/symfony-devops
-Source (deploy):
-Docker image (docker hu): https://hub.docker.com/r/
+Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
+Source: https://github.com/Juju075/symfony-devops <br>
+Source (deploy): <br>
+Docker image (docker hu): https://hub.docker.com/r/ <br>
 
 ## 
 
