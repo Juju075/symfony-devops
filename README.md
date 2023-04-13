@@ -16,7 +16,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 Demo: <a href="#">symfony-devops.bempime-kheve.com</a>
 Source: https://github.com/Juju075/symfony-devops
-Source (deploy) 
+Source (deploy):
 Docker image (docker hu): https://hub.docker.com/r/
 
 ## 
