@@ -12,7 +12,7 @@ Unit tests in Github Action CI/CD (discovery..)
 
 <br/>
 
-### Project in progress... Authentification verification
+### Project in progress... Docker  
 
 Demo: <a href="#">symfony-devops.bempime-kheve.com</a>
 Source: https://github.com/Juju075/symfony-devops
