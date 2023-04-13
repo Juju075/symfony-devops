@@ -14,12 +14,12 @@ Unit tests in Github Action CI/CD (discovery..)
 
 ### Project in progress... Authentification verification
 
-Demo: symfony-devops.bempime-kheve.com
+Demo: <a href="#">symfony-devops.bempime-kheve.com</a>
 Source: https://github.com/Juju075/symfony-devops
 Source (deploy) 
 Docker image (docker hu): https://hub.docker.com/r/
 
-## <a href="#">symfony-devops.bempime-kheve.com</a>
+## 
 
 
 <img src="https://camo.githubusercontent.com/1286ca53c148499090f035cf8808a51d071a80bbd19e810ac18f07b635fbfb08/68747470733a2f2f636972636c6563692e636f6d2f67682f73696c617268692f73796d666f6e792d646f636b65722d63692e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/silarhi/symfony-docker-ci.svg?style=svg" style="max-width: 100%;">
