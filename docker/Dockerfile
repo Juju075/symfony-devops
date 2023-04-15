@@ -9,6 +9,7 @@ COPY ../public ./public
 # templates
 RUN composer install
 RUN php bin/console cache:clear
+# ne pas inclure dev
 COPY composer.json composer.lock ./
 RUN composer install --no-plugins --no-scripts
 
