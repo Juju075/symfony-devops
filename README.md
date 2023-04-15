@@ -1,8 +1,8 @@
-# Symfony 6 + PHP8.1.0 + PHPUnit + Jenkins + Docker
+# Docker + Symfony 6 + PHP8.1.0 + Mysql 8 + Jenkins
 
 This is a complete stack for running Symfony 6.1 into Docker containers using docker-compose tool with docker-sync library.
 <p>Composed by nb containers:</p>
-<p>php, the PHP-FPM container with the 8.0 version of PHP.</p>
+<p>php, the PHP-FPM container with the 8.1 version of PHP.</p>
 <p>db, MySQL database container with a MySQL 8.0 image.</p>
 <p>symfony_docker_app_sync to sync files using library docker-sync .</p>
 
