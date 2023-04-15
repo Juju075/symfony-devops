@@ -1,4 +1,6 @@
 FROM php:8.1-apache
+FROM composer:latest AS composer
+
 LABEL bempime kheve
 WORKDIR /var/www/html
 COPY ../src ./src
@@ -7,8 +9,10 @@ COPY ../public ./public
 
 # files config/ packages et routes
 # templates
-RUN composer install
-RUN php bin/console cache:clear
+
+#RUN composer install # utilise image as composer https://hub.docker.com/_/composer
+#RUN php bin/console cache:clear
+
 # ne pas inclure dev
 COPY composer.json composer.lock ./
 RUN composer install --no-plugins --no-scripts

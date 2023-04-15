@@ -1,6 +1,9 @@
 version: '3.9'
 
 services:
+
+  #php    ./app
+
   app:
     build: ./chemin/vers/votre/Dockerfile
     ports:
