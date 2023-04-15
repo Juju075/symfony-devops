@@ -13,7 +13,6 @@ This is a complete stack for running Symfony 6.1 into Docker containers using do
 
 <br/>
 
-Unit tests in Github Action CI/CD (discovery..)
 <br/>
 
 <br/>
