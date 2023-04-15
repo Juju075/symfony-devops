@@ -25,6 +25,10 @@ This is a complete stack for running Symfony 6.1 into Docker containers using do
 smfjmslkfj
 </td>
 </tr>
+<td>
+smfjmslkfj
+</td>
+</tr>
 </table>
 
 Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
