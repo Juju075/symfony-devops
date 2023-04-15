@@ -6,11 +6,6 @@
 <div align="center"><img src="public/images/cicd-gotestr.png" height="250" alt="image"></div>
 
 <br/>
-
-<br/>
-
-<br/>
-
 <br/>
 
 ### Project in progress... Docker  <br><br>
