@@ -8,7 +8,7 @@
 <br/>
 <br/>
 
-### Project in progress... Docker  <br><br>
+### Project in progress... Dockerization  <br><br>
 
 <table>
 <tr>
