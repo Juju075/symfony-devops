@@ -1,4 +1,4 @@
-# Docker + Symfony 6 + PHP8.1.0 + Mysql 8 + Jenkins
+# Docker + PHP8.1.0 + Mysql 8 + Jenkins
 
 
 
