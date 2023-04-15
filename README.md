@@ -19,6 +19,14 @@ This is a complete stack for running Symfony 6.1 into Docker containers using do
 
 ### Project in progress... Docker  <br><br>
 
+<table>
+<tr>
+<td>
+smfjmslkfj
+</td>
+</tr>
+</table>
+
 Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
 Source: <a href="https://github.com/Juju075/symfony-devops">Github repository</a> <br>
 Source (deploy): <br>
