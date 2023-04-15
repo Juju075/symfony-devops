@@ -19,7 +19,8 @@ Source (deploy): <br>
 Docker image: https://hub.docker.com/r/ <br>
 </td>
 <td>
-This is a complete stack for running Symfony 6.1 into Docker containers using docker-compose tool with docker-sync library.
+<em>This is a complete stack for running Symfony 6.1 into Docker containers using docker-compose tool with docker-sync library.
+</em>
 <p>Composed by nb containers:</p>
 <p>php, the PHP-FPM container with the 8.1 version of PHP.</p>
 <p>db, MySQL database container with a MySQL 8.0 image.</p>
