@@ -44,7 +44,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 
 ## UML
 
-### <a href="https://github.com/Juju075/symfony-devops/tree/main/UML">`📄 See diagrams`</a>
+### <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
 
 ## PHP Unit
 
