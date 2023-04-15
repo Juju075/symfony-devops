@@ -24,7 +24,6 @@ This is a complete stack for running Symfony 6.1 into Docker containers using do
 <td>
 smfjmslkfj
 </td>
-</tr>
 <td>
 smfjmslkfj
 </td>
