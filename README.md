@@ -40,7 +40,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 
 ## Topics<br>
 
-| <a href="https://github.com/Juju075/symfony-devops/tree/main/UML">UML</a> |
+| <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">UML</a> |
 
 ## UML
 
