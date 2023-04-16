@@ -20,12 +20,12 @@ services:
     image: mysql:8.0
     container_name: db_app
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD} # Utilisation de la syntaxe ${VAR_NAME} pour référencer les variables d'environnement
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
-      - db-data:/var/lib/mysql #répertoire de données MySQ
+      - db-data:/var/lib/mysql
     ports:
       - "3306:3306"
 ###< doctrine/doctrine-bundle ###
