@@ -46,6 +46,17 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 
 ### <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
 
+
+Deployment
+
+## Dockerfile
+### <a href="https://github.com/Juju075/symfony-devops/blob/docker/docker/Dockerfile">`📄 Dockerfile`</a>
+ 
+
+## docker-compose
+### <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
+ 
+
 ## PHP Unit
 
 <h3>How to benefit from PHPUnit?</h3>
