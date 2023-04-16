@@ -27,9 +27,7 @@ services:
     volumes:
       - db-data:/var/lib/mysql #répertoire de données MySQ
     ports:
-      - "3306:3306" # Port de la base de données MySQL
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
+      - "3306:3306"
 ###< doctrine/doctrine-bundle ###
   my_service:
     build:
@@ -39,9 +37,8 @@ services:
         - VAR2=value2
         -
 volumes:
-###> doctrine/doctrine-bundle ###
-  database_data: # Définition du volume pour les données de la base de données
-###< doctrine/doctrine-bundle ###
+
+
 
 
 
