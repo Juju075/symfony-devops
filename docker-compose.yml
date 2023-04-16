@@ -9,8 +9,6 @@ services:
 
     depends_on:
       - database
-    env_file:
-      - .env.local
     networks:
       - appconnect
     ports:
@@ -21,6 +19,8 @@ services:
   database:
     image: mysql:8.0
     container_name: db_app
+    env_file:
+      - .env.local
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -33,16 +33,6 @@ services:
     volumes:
       - db-data:/var/lib/mysql
 
-
-###< doctrine/doctrine-bundle ###
-  my_service:
-    build:
-      context: .
-      args:
-        - VAR1=value1
-        - VAR2=value2
-        -
-volumes:
 
 
 
