@@ -4,7 +4,6 @@ WORKDIR /var/www/html
 COPY ../public ./public
 COPY ../src ./src
 COPY ../templates ./templates
-#.env.production
 
 FROM composer:latest AS composer
 COPY composer.json composer.lock ./
