@@ -1,16 +1,18 @@
 version: '3.9'
 
 services:
-  #php    ./app
   app:
-    build: ./
     container_name: web-app
-    context:
-    dockerfile: ./docker/Dockerfile
+    build:
+      context: ./docker/
+      dockerfile: ./docker/Dockerfile
+
     depends_on:
       - database
     env_file:
       - .env.local
+    networks:
+      - appconnect
     ports:
       - "8000:80"
     volumes:
@@ -24,10 +26,13 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - appconnect
+    ports:
+    - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-    ports:
-      - "3306:3306"
+
 
 ###< doctrine/doctrine-bundle ###
   my_service:
