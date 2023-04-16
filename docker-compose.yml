@@ -1,11 +1,16 @@
 version: '3.9'
 
 services:
-
   #php    ./app
-
   app:
-    build: ./chemin/vers/votre/Dockerfile
+    build: ./
+    container_name: web-app
+    context:
+    dockerfile: ./docker/Dockerfile
+    depends_on:
+      - database
+    env_file:
+      - .env.local
     ports:
       - "8000:80"
     volumes:
@@ -13,20 +18,29 @@ services:
 
   database:
     image: mysql:8.0
+    container_name: db_app
     environment:
-      - MYSQL_ROOT_PASSWORD=your_password
-      - MYSQL_DATABASE=your_database
-      - MYSQL_USER=your_user
-      - MYSQL_PASSWORD=your_password
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD} # Utilisation de la syntaxe ${VAR_NAME} pour référencer les variables d'environnement
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
-      - db-data:/var/lib/mysql
+      - db-data:/var/lib/mysql #répertoire de données MySQ
+    ports:
+      - "3306:3306" # Port de la base de données MySQL
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
-
+  my_service:
+    build:
+      context: .
+      args:
+        - VAR1=value1
+        - VAR2=value2
+        -
 volumes:
 ###> doctrine/doctrine-bundle ###
-  database_data:
+  database_data: # Définition du volume pour les données de la base de données
 ###< doctrine/doctrine-bundle ###
 
 
