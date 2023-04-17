@@ -38,17 +38,17 @@ https://writecode.fr/tutoriel/la-gestion-des-permissions-avec-les-voters
 Administrateur sans bundle
 
 ---
-FormRype
+FormType
 createForm(FormType::class, $entity)
 
 imbrication (list) category/product
 
 ---
 Activation de cpt user  0 > 1
-Sendmail  | registercontroller (service responsaility mailer)
-Templatemail de symfony
+Sendmail  | register controller (service responsibility mailer)
+Template mail de symfony
 **
-desactivation de messenger de symfony  (messenger.yaml)
+désactivation de messenger de symfony  (messenger.yaml)
 #Symfony\Component\Mailer\Messenger\SendEmailMessage: async
 ---
 Ajoute de service dans service.yaml
@@ -60,9 +60,9 @@ https://www.yamllint.com/
 
 ****
 ---
-Custom repository (querybuilder)
+Custom repository (query-builder)
 ---
-Form imbrique  list & querybuilder
+Form imbrique  list & query-builder
 
 ---
 Form Button dynamique
@@ -88,7 +88,7 @@ return Affirmation?     :bool
 faire un ternaire au lieu d'un if/else
 on peut faire un ternaire
 ---
-Apprendre ausi custom QueryBuilder de DOCTRINE
+Apprendre aussi custom QueryBuilder de DOCTRINE
 https://www.doctrine-project.org/projects/doctrine-orm/en/2.14/reference/query-builder.html
 createQueryBuilder()
 

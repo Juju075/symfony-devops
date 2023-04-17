@@ -6,6 +6,7 @@ services:
     build:
       context: ./docker/
       dockerfile: ./docker/Dockerfile
+    image: php:8.1-apache
     depends_on:
       - database
     networks:

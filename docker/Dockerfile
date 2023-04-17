@@ -15,7 +15,8 @@ COPY testAjoutFichier.dm ./
 RUN mkdir /database-app
 VOLUME /database-app
 
-EXPOSE 80
 
 #corrige cmd mauvais apache
+#start app
 #CMD ["apache2-foreground"]
+EXPOSE 80
