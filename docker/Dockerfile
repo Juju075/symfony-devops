@@ -27,12 +27,11 @@ RUN rm -rf /var/www/vendor && \
     php bin/console cache:warmup && \
     chown -R www-data:www-data /var/www
 
-WORKDIR /var/www/
-ENTRYPOINT []
-
 RUN mkdir /database-app
 VOLUME /database-app
 
+WORKDIR /var/www/
 EXPOSE 80
-#start app | corrige cmd mauvais apache
-CMD ["apache2-foreground"]
+# au lieu de CMD ["apache2-foreground"]
+ENTRYPOINT ["bash", "./docker/docker.sh"]
+
