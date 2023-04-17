@@ -21,10 +21,14 @@ services:
     env_file:
       - .env.local
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+#      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+#      MYSQL_DATABASE: ${MYSQL_DATABASE}
+#      MYSQL_USER: ${MYSQL_USER}
+#      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: symfony-devops
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     networks:
       - appconnect
     ports:
@@ -32,8 +36,7 @@ services:
     volumes:
       - db-data:/var/lib/mysql
 
-  networks:
-      appconnect:
+#error services.networks must be a mapping
 
 
 
