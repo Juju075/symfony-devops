@@ -14,6 +14,7 @@ COPY testAjoutFichier.dm ./
 #COPY ../composer.json ./
 RUN mkdir /database-app
 VOLUME /database-app
+
 EXPOSE 80
 
 #corrige cmd mauvais apache

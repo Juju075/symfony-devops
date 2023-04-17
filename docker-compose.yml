@@ -15,6 +15,13 @@ services:
     volumes:
       - .:/var/www/html
 
+  cache:
+    image: redis:alpine
+    networks:
+      - appconnect
+    volumes:
+      - cachedata:/tmp-data
+
   database:
     image: mysql:8.0
     container_name: db_app
@@ -37,6 +44,9 @@ services:
       - db-data:/var/lib/mysql
 
 #error services.networks must be a mapping
+  networks:
+    appconnect:
+      driver: bridge
 
 
 
