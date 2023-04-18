@@ -14,7 +14,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - .:/var/www/html
+      - .:/var/www/
 
   database:
     image: mysql:8.0
