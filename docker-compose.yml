@@ -3,6 +3,7 @@ version: '3.9'
 services:
   app:
     container_name: web-app
+    restart: always
     build:
       context: ./
       dockerfile: Dockerfile
@@ -20,6 +21,7 @@ services:
   database:
     image: mysql:8.0
     container_name: db_app
+    restart: always
     env_file:
       - .env
     environment:
@@ -58,7 +60,7 @@ services:
 
   volumes:
     db-data:
-      driver:
+      driver: local
     jenkins_data:
       driver: local
     jenkins:
