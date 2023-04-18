@@ -16,14 +16,6 @@ services:
     volumes:
       - .:/var/www/html
 
-  cache:
-    image: redis:alpine
-    container_name: cache
-    networks:
-      - appconnect
-    volumes:
-      - cachedata:/tmp-data
-
   database:
     image: mysql:8.0
     container_name: db_app
