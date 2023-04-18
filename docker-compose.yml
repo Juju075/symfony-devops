@@ -4,8 +4,8 @@ services:
   app:
     container_name: web-app
     build:
-      context: ./docker/
-      dockerfile: ./docker/Dockerfile
+      context: ./
+      dockerfile: Dockerfile
     image: php:8.1-apache
     depends_on:
       - database
