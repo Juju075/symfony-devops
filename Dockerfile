@@ -12,7 +12,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
 COPY . /var/www/
 ENV APP_ENV=prod
-COPY .env /var/www/.env
+#COPY .env /var/www/.env
 
 RUN cd /var/www && \
     composer install && \
@@ -26,9 +26,3 @@ VOLUME /database-app
 WORKDIR /var/www/
 ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
-
-
-
-#Fatal error: Uncaught Symfony\Component\Dotenv\Exception\PathException:
-#Unable to read the "/var/www/.env" environment
-#file. in /var/www/vendor/symfony/dotenv/Dotenv.php:552
