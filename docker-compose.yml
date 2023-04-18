@@ -14,13 +14,14 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - .:/var/www/
+#      - .:/var/www/
+      - app:/var/www/
 
   database:
     image: mysql:8.0
     container_name: db_app
     env_file:
-      - .env.local
+      - .env
     environment:
 #      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
 #      MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -37,12 +38,31 @@ services:
     volumes:
       - db-data:/var/lib/mysql
 
+  jenkins:
+    image: 'jenkins'
+    container_name: "jenkins"
+    labels:
+      kompose.service.type: nodeport
+    ports:
+      - '8080:8080'
+      - '443:8443'
+      - '50000:50000'
+    volumes:
+      - /srv/data/jenkins_data:/jenkins_home
+      - /srv/data/jenkins:/var/jenkins_config
+
 #error services.networks must be a mapping
   networks:
     appconnect:
       driver: bridge
 
-
+  volumes:
+    db-data:
+      driver:
+    jenkins_data:
+      driver: local
+    jenkins:
+      driver: local
 
 
 
