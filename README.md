@@ -17,7 +17,7 @@ Deployment of
 <tr>
 <td>
 Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
-Sreencast demo 1min 
+Sreencast demo 1min<br> 
 Source: <a href="https://github.com/Juju075/symfony-devops">Github repository</a> <br>
 Source (deploy): <br>
 Docker image: https://hub.docker.com/r/ <br>
