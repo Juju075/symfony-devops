@@ -22,4 +22,3 @@ ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
 
 
-#recupere le composer.phar de l'image composer image <>image
