@@ -11,7 +11,7 @@ Deployment of
 <br/>
 <br/>
 
-### Project in progress... Dockerization  <br><br>
+### Project in progress... Pipeline building  <br><br>
 
 <table>
 <tr>
