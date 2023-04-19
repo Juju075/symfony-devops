@@ -29,9 +29,6 @@ Docker image: https://hub.docker.com/r/ <br>
 <p>db, MySQL database container with a MySQL 8.0 image.</p>
 <p>symfony_docker_app_sync to sync files using library docker-sync .</p>
 </td>
-<td>
-<div align="center"><img src="public/images/cicd-gotestr.png" height="250" width="400" alt="image"></div>
-</td>
 </tr>
 </table>
 
@@ -105,6 +102,7 @@ Ultimately, testing is an essential part of the software development process.
 
 <br>
 
+<div align="center"><img src="public/images/cicd-gotestr.png" height="250"  alt="image"></div>
 ## Jenkins
 
 <h3> What is jenkins?</h3>
