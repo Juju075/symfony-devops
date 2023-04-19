@@ -32,7 +32,7 @@ Docker image: https://hub.docker.com/r/ <br>
 <p>symfony_docker_app_sync to sync files using library docker-sync .</p>
 </td>
 <td>
-<div align="center"><img src="public/images/cicd-gotestr.png" height="250" alt="image"></div>
+<div align="center"><img src="public/images/cicd-gotestr.png" height="250" width="400" alt="image"></div>
 </td>
 </tr>
 </table>
