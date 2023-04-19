@@ -59,20 +59,6 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 ## docker-compose
 ### <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
  
-<br>
-## PHP Unit
-
-
-My projet is to demonstrate 
-
-
-1min 
-launch all PHP Tests in one (screencast demonstration)
-
-Docker
-image
-container
-
 
 
 ## zer
