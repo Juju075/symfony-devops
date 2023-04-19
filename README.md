@@ -73,7 +73,7 @@ container
 Deployment
 www
 
-
+<div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 
 
 ## zer
