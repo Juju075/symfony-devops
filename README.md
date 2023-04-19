@@ -44,7 +44,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 ## Topics<br>
 
 | <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">UML</a> |
-<a href="#">Dockfile</a> |<a href="#">docker-compose</a> |<a href="#">here</a> |<a href="#">Dev-Test-Deploy</a> |
+<a href="#">Dockfile</a> | <a href="#">docker-compose</a> | <a href="#">here</a> | <a href="#">Dev-Test-Deploy</a> |
 <br><br>
 ## UML
 
