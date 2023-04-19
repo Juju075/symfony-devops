@@ -2,8 +2,13 @@
 
 
 
+
+Deployment
+www
+
+<div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
-<div align="center"><img src="public/images/cicd-gotestr.png" height="250" alt="image"></div>
+
 
 <br/>
 <br/>
@@ -25,6 +30,9 @@ Docker image: https://hub.docker.com/r/ <br>
 <p>php, the PHP-FPM container with the 8.1 version of PHP.</p>
 <p>db, MySQL database container with a MySQL 8.0 image.</p>
 <p>symfony_docker_app_sync to sync files using library docker-sync .</p>
+</td>
+<td>
+<div align="center"><img src="public/images/cicd-gotestr.png" height="250" alt="image"></div>
 </td>
 </tr>
 </table>
@@ -70,10 +78,6 @@ Docker
 image
 container
 
-Deployment
-www
-
-<div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 
 
 ## zer
