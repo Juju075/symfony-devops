@@ -53,7 +53,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
  
 
 ## Dockerfile
-### <a href="https://github.com/Juju075/symfony-devops/blob/docker/docker/Dockerfile">`📄 Dockerfile`</a>
+### <a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
  
 
 ## docker-compose
