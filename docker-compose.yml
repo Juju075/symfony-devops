@@ -10,12 +10,12 @@ services:
     depends_on:
       - database
     networks:
-      - appconnect
+      - connect
     ports:
       - "8000:80"
     volumes:
-#      - .:/var/www/
-      - app:/var/www/
+      #      - .:/var/www/
+      - db-app:/var/www/
 
   database:
     image: mysql:8.0
@@ -24,24 +24,21 @@ services:
     env_file:
       - .env
     environment:
-#      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-#      MYSQL_DATABASE: ${MYSQL_DATABASE}
-#      MYSQL_USER: ${MYSQL_USER}
-#      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: symfony-devops
       MYSQL_USER: root
       MYSQL_PASSWORD: root
     networks:
-      - appconnect
+      - connect
     ports:
-    - "3306:3306"
+      - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-#      - doctrine schema < sql
+  #      - doctrine schema < sql
 
   jenkins:
-    image: 'jenkins'
+    #jenkins/jenkins:lts-jdk11
+    image: 'jenkins/jenkins:lts-jdk11'
     container_name: "jenkins"
     labels:
       kompose.service.type: nodeport
@@ -54,17 +51,21 @@ services:
       - /srv/data/jenkins:/var/jenkins_config
 
 #error services.networks must be a mapping
-  networks:
-    appconnect:
-      driver: bridge
+networks:
+  connect:
+    driver: bridge
 
-  volumes:
-    db-data:
-      driver: local
-    jenkins_data:
-      driver: local
-    jenkins:
-      driver: local
+volumes:
+  db-app:
+    driver: local
+  db-data:
+    driver: local
+  jenkins_data:
+    driver: local
+  jenkins:
+    driver: local
+
+
 
 
 
