@@ -12,7 +12,7 @@ Deployment of
 <br/>
 
 ### Project in progress... Pipeline building  <br><br>
-
+<div align="center">
 <table>
 <tr>
 <td>
@@ -31,6 +31,7 @@ Docker image: https://hub.docker.com/r/ <br>
 </td>
 </tr>
 </table>
+</div>
 
 
 
