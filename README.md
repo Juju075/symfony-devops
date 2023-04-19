@@ -3,9 +3,7 @@
 
 
 
-Deployment
-www
-
+Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
