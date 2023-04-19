@@ -25,9 +25,9 @@ Docker image: https://hub.docker.com/r/ <br>
 <em>
 </em>
 <p>Composed by nb containers:</p>
-<p>php, the PHP-FPM container with the 8.1 version of PHP.</p>
-<p>db, MySQL database container with a MySQL 8.0 image.</p>
-<p>symfony_docker_app_sync to sync files using library docker-sync .</p>
+<p>1-Symfony app container with the 8.1 version of PHP.</p>
+<p>2-Database container with a MySQL 8.0 image.</p>
+<p>3-Jenkins container.</p>
 </td>
 </tr>
 </table>
