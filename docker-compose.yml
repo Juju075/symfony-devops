@@ -50,7 +50,6 @@ services:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
 
-#error services.networks must be a mapping
 networks:
   connect:
     driver: bridge
