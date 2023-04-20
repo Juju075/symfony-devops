@@ -5,6 +5,7 @@
 ###> symfony/framework-bundle ###
 #.env
 .env.test
+.git
 /git
 /UML
 /.env.local
