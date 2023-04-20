@@ -16,7 +16,6 @@ RUN cd /var/www && \
     php bin/console cache:warmup && \
     chown -R www-data:www-data /var/www && \
     mkdir /database-app
-#VOLUME /database-app
 WORKDIR /var/www/
 ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
