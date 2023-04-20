@@ -37,7 +37,6 @@ services:
   #      - doctrine schema < sql
 
   jenkins:
-    #jenkins/jenkins:lts-jdk11
     image: 'jenkins/jenkins:lts-jdk11'
     container_name: "jenkins"
     labels:
