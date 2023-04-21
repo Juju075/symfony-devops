@@ -5,12 +5,12 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions intl && \
     curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
     mv composer.phar /usr/local/bin/composer && \
-    apt update && apt install -yqq zip git
+    apt update && apt install -yqq zip git \
 COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
-COPY . /var/www/
+COPY . /var/www/html
 ENV APP_ENV=prod
 #COPY .env /var/www/.env
-RUN cd /var/www && \
+RUN cd /var/www/html && \
     composer install && \
     php bin/console cache:clear && \
     php bin/console cache:warmup && \

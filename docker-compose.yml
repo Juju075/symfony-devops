@@ -54,7 +54,7 @@ services:
 networks:
   connect:
     driver: bridge
-#cree les volume
+# https://docs.docker.com/storage/
 volumes:
   webapp:
     driver: local
@@ -66,5 +66,7 @@ volumes:
     driver: local
   jenkins_data:
     driver: local
+    external: true
   jenkins:
     driver: local
+    external: true
