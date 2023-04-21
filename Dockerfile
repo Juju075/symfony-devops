@@ -19,5 +19,3 @@ RUN cd /var/www/html && \
 WORKDIR /var/www/
 ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
-
-
