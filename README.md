@@ -14,28 +14,26 @@ Deployment of
 
 ### Project in progress... Pipeline building  <br><br>
 <div align="center">
-<table>
-<tr>
-<td>
-Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
-Sreencast demo 1min<br> 
-Source: <a href="https://github.com/Juju075/symfony-devops">Github repository</a> <br>
-Source (deploy): <br>
-Docker image: https://hub.docker.com/r/ <br>
-</td>
-<td>
-<em>
-</em>
-<p>Composed by 3 containers:</p>
-<p>1-Symfony app container with the 8.1 version of PHP.</p>
-<p>2-Database container with a MySQL 8.0 image.</p>
-<p>3-Jenkins container.</p>
-</td>
-</tr>
-</table>
+    <table>
+        <tr>
+            <td>
+                Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
+                Sreencast demo 1min<br> 
+                Source: <a href="https://github.com/Juju075/symfony-devops">Github repository</a> <br>
+                Source (deploy): <br>
+                Docker image: https://hub.docker.com/r/ <br>
+            </td>
+            <td>
+                <em>
+                </em>
+                <p>Composed by 3 containers:</p>
+                <p>1-Symfony app container with the 8.1 version of PHP.</p>
+                <p>2-Database container with a MySQL 8.0 image.</p>
+                <p>3-Jenkins container.</p>
+            </td>
+        </tr>
+    </table>
 </div>
-
-
 
 ##
 <!--
@@ -49,36 +47,32 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <br><br>
 
 <div align="center">
-<table>
-<tr>
-<td>
-<h2>Jenkinsfile</h2>
-<a href="#">`📄 Pipeline script`</a>
-</td>
-<td>
-<h2>Dockerfile</h2>
-<a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
-</td>
-<td>
-<h2>docker-compose</h2>
-<a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
-</td>
-</tr>
-<tr>
-<a href="#"><h2>DatabaseModel</h2></a>
- 
-<td>
-chart
-</td>
-<td>ici</td>
-<td>ici</td>
-</tr>
-</table>
+    <table>
+        <tr>
+            <td>
+            <h2>Jenkinsfile</h2>
+            <a href="#">`📄 Pipeline script`</a>
+            </td>
+                <td>
+                <h2>Dockerfile</h2>
+                <a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
+            </td>
+        <td>
+            <h2>docker-compose</h2>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
+        </td>
+        </tr>
+        <tr>
+            <a href="#"><h2>DatabaseModel</h2></a>
+            <td>
+            chart
+        </td>
+        <td>ici</td>
+        <td>ici</td>
+        </tr>
+    </table>
 </div>
-
-
 <h3>How to benefit from PHPUnit?</h3>
-
 <br>
 
 Testing your code is crucial to ensure that it works as intended, meets the requirements of the end-users, <br>
