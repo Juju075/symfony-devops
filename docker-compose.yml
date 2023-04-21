@@ -13,10 +13,13 @@ services:
       - connect
     ports:
       - "8080:80"
+    # "/path/to/volume:/mount/point"
     volumes:
-      #      - .:/var/www/
-      - db-app:/var/www/
+      - ./webapp:/var/www/html
+      - ./log:/var/log/apache2/
+      - ./vhosts:/etc/apache2/sites-available/
 
+  #mounted in all application
   database:
     image: mysql:8.0
     container_name: db_app
@@ -34,8 +37,7 @@ services:
       - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-  #      - doctrine schema < sql
-
+      -
   jenkins:
     image: 'jenkins/jenkins:lts-jdk11'
     container_name: "jenkins"
@@ -54,7 +56,11 @@ networks:
     driver: bridge
 
 volumes:
-  db-app:
+  webapp:
+    driver: local
+  log:
+    driver: local
+  vhosts:
     driver: local
   db-data:
     driver: local
