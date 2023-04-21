@@ -49,19 +49,44 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 | <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">UML</a> |
 <a href="#">Dockfile</a> | <a href="#">docker-compose</a> | <a href="#">here</a> | <a href="#">Dev-Test-Deploy</a> |
 <br><br>
-## UML
 
-### <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
+<div align="center">
+<table>
+<tr>
+<td>
+<h2>UML</h2>
+<a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
+</td>
+<td>
+<h2>Dockerfile</h2>
+<a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
+</td>
+<td>
+<h2>docker-compose</h2>
+<a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
+
+</td>
+</tr>
+<tr>
+<td>
+<h2>UML</h2>
+<a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
+
+</td>
+<td>ici</td>
+<td>ici</td>
+</tr>
+</table>
+</div>
+
+
 
 
  
 
-## Dockerfile
-### <a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
+
  
 
-## docker-compose
-### <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
 
 ## Jenkinsfile & Schema
 ### <a href="#">`📄 Jenkins pipeline script`</a> 
