@@ -67,8 +67,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 </td>
 </tr>
 <tr>
-<h2>Jenkinsfile & Schema</h2>
-<a href="#">`📄 Jenkins pipeline script`</a> 
+<h2>DatabaseModel</h2>
 <td>
 idi
 
