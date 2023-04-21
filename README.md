@@ -64,13 +64,13 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <td>
 <h2>docker-compose</h2>
 <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
-
 </td>
 </tr>
 <tr>
+<h2>Jenkinsfile & Schema</h2>
+<a href="#">`📄 Jenkins pipeline script`</a> 
 <td>
-<h2>UML</h2>
-<a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
+idi
 
 </td>
 <td>ici</td>
@@ -79,20 +79,6 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 </table>
 </div>
 
-
-
-
- 
-
-
- 
-
-
-## Jenkinsfile & Schema
-### <a href="#">`📄 Jenkins pipeline script`</a> 
-
-
-## zer
 
 <h3>How to benefit from PHPUnit?</h3>
 
