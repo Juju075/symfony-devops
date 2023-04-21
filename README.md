@@ -54,8 +54,8 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <table>
 <tr>
 <td>
-<h2>UML</h2>
-<a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">`📄 See diagrams`</a>
+<h2>Jenkinsfile</h2>
+<a href="#">`📄 Pipeline script`</a>
 </td>
 <td>
 <h2>Dockerfile</h2>
