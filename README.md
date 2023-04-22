@@ -63,12 +63,12 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <tr>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">DatabaseModel</a>
             <td>
-            chart
-        </td>
+                <a href="">`📄 chart`</a>
+            </td>
         <td>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">Bash init app</a>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">`📄 Bash init app`</a>
         </td>
-        <td>ici</td>
+        <td>`📄 ici`</td>
         </tr>
     </table>
 </div>
