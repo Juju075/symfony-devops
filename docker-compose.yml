@@ -13,7 +13,11 @@ services:
       - connect
     ports:
       - "8080:80"
+
     # "/path/to/volume:/mount/point"
+    # exterieur container (utilisateur client):interieur container (port expo image)
+    # on branche le conteneur au volume
+
     volumes:
       - ./webapp:/var/www/html
       - ./log:/var/log/apache2/
@@ -28,7 +32,7 @@ services:
       - .env
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: symfony-devops
+      MYSQL_DATABASE: db_app
       MYSQL_USER: root
       MYSQL_PASSWORD: root
     networks:
@@ -54,6 +58,7 @@ services:
 networks:
   connect:
     driver: bridge
+
 # https://docs.docker.com/storage/
 volumes:
   webapp:

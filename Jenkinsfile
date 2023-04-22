@@ -22,7 +22,7 @@ pipeline {
             }
         }
 
-        //3- Test all features | Run cmd for:  all unit test PHP Unit
+        //3- Execute all app unit test | Run cmd for:  all unit test PHP Unit
         stage('Test') {
             steps {
                 sh 'vendor/bin/phpunit tests'
