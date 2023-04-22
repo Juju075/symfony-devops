@@ -17,5 +17,5 @@ RUN cd /var/www/html && \
     chown -R www-data:www-data /var/www && \
     mkdir /database-app #ne voit pas ce dossier
 WORKDIR /var/www/
-ENTRYPOINT ["bash init & config bdd", "./docker/docker.sh"]
+ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
