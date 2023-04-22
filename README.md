@@ -41,8 +41,8 @@ sdfsfsfsdfsfs
 https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 -->
 <div align="center">
-| <a href="#">ici</a> |
-<a href="#">ici</a> | <a href="#">ici</a> | <a href="#">ici</a> | <a href="#">ici</a> |
+| <a href="https://github.com/Juju075/symfony-devops#-what-is-jenkins">Jenkins</a> |
+<a href="https://github.com/Juju075/symfony-devops#docker">Docker</a> | <a href="#">Pipeline</a> | <a href="https://github.com/Juju075/symfony-devops#the-deployment-process-on-a-casual-hosting-platform">Deployment</a> | <a href="https://github.com/Juju075/symfony-devops#other-projects">Other projects</a> |
 </div>
 <br><br>
 
