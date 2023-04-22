@@ -49,26 +49,26 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <tr>
             <td>
             <h2>Jenkinsfile</h2>
-            <a href="#">`📄 Pipeline script`</a>
+            <a href="#">📄 Pipeline script</a>
             </td>
                 <td>
                 <h2>Dockerfile</h2>
-                <a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">`📄 Dockerfile`</a>
+                <a href="https://github.com/Juju075/symfony-devops/blob/main/Dockerfile">📄 Dockerfile</a>
             </td>
         <td>
             <h2>docker-compose</h2>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">`📄 docker-compose`</a>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">📄 docker-compose</a>
         </td>
         </tr>
         <tr>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">DatabaseModel</a>
             <td>
-                <a href="">`📄 Schema pipeline`</a>
+                <a href="">📄 Schema pipeline</a>
             </td>
         <td>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">`📄 Bash init app`</a>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">📄 Bash init app</a>
         </td>
-        <td>`📄 ici`</td>
+        <td>📄 ici</td>
         </tr>
     </table>
 </div>
