@@ -5,7 +5,6 @@ pipeline {
         //1- Récupère le code source à partir du dépôt Git
         stage('Checkout') {
               steps {
-                // Récupère le code source à partir du repo Git
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/master']],
                           doGenerateSubmoduleConfigurations: false,
@@ -52,6 +51,7 @@ pipeline {
         }
 
         //6- Notification fin de processu par email list de destinataire
+        // function mail
         stages {
             steps {
                 sh 'notification'
