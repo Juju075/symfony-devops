@@ -14,8 +14,8 @@ RUN cd /var/www/html && \
     composer install && \
     php bin/console cache:clear && \
     php bin/console cache:warmup && \
-    chown -R www-data:www-data /var/www && \
-    mkdir /database-app #ne voit pas ce dossier
-WORKDIR /var/www/
+    chown -R www-data:www-data /var/www/html
+    #mkdir /database-app #ne voit pas ce dossier
+WORKDIR /var/www/html
 ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
