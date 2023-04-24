@@ -11,6 +11,7 @@ services:
       - database
     networks:
       - connect
+    # mapper le port conteneur:au port de l'hote client
     ports:
       - "8080:80"
 
