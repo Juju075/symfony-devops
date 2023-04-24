@@ -24,7 +24,7 @@ services:
       - ./log:/var/log/apache2/
       - ./vhosts:/etc/apache2/sites-available/
 
-  #mounted in all application
+  #mounted from all application
   database:
     image: mysql:8.0
     container_name: db_app
