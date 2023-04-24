@@ -12,6 +12,7 @@ services:
     networks:
       - connect
     # mapper le port conteneur:au port de l'hote client
+    #machine local app:conteneur
     ports:
       - "8080:80"
 
@@ -46,7 +47,9 @@ services:
   jenkins:
     image: 'jenkins/jenkins:lts-jdk11'
     container_name: "jenkins"
+    # Kubernetes.ip volumes
     labels:
+      #outil kompose
       kompose.service.type: nodeport
     ports:
       - '8080:8080'

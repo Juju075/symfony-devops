@@ -7,7 +7,10 @@ Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 <div align="center"><img src="public/images/ci-cd.png" alt="image"></div>
-<br/><br/><br/>
+<br/><br/>
+
+<img src="public/images/docker-kubernetes.png">
+<br/>
 
 ### Project in progress... Pipeline building  <br><br>
 
