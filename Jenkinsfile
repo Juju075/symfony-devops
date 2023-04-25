@@ -3,7 +3,7 @@ pipeline {
     stages {
 
         //1- Récupère le code source à partir du dépôt Git ds jenkins
-        stage('Checkout') {
+        stage('Clone') {
               steps {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
         }
