@@ -2,16 +2,10 @@ pipeline {
     agent any
     stages {
 
-        //1- Récupère le code source à partir du dépôt Git
+        //1- Récupère le code source à partir du dépôt Git ds jenkins
         stage('Checkout') {
               steps {
-                checkout([$class: 'GitSCM',
-                          branches: [[name: '*/master']],
-                          doGenerateSubmoduleConfigurations: false,
-                          extensions: [],
-                          submoduleCfg: [],
-                          userRemoteConfigs: [[url: 'https://github.com/nom-du-repo.git']]])
-              }
+              git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
         }
 
         //2- Compilation app
