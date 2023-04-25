@@ -39,7 +39,7 @@ pipeline {
            }
          }
 
-        //4- Deploiement sur namecheap
+        //4- Deploiement sur AWS
         stage('Deploy') {
             environment {
                 DOCKER_REGISTRY = "my-registry"
