@@ -6,6 +6,7 @@
 #.env
 .env.test
 .git
+Dockerfile
 /git
 /UML
 /.env.local

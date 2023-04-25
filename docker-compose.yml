@@ -63,7 +63,7 @@ networks:
   connect:
     driver: bridge
 
-# https://docs.docker.com/storage/
+
 volumes:
   webapp:
     driver: local

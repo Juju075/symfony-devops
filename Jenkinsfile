@@ -24,7 +24,8 @@ pipeline {
         //3- Execute all app unit test | Run cmd for:  all unit test PHP Unit
         stage('Test') {
             steps {
-                sh 'vendor/bin/phpunit tests'
+                //sh 'vendor/bin/phpunit tests'
+                sh'./vendor/bin/phpunit tests --colors -v –testdox'
             }
         }
 
