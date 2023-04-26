@@ -8,8 +8,8 @@ Deployment of
 Ready to be deploy<br/>
 <br/>
 <div align="center">
-    <img src="public/images/docker-kubernetes.png"  width="500">
-    <img src="public/images/amazon-partner-network-logo.jpeg" alt="" width="500">
+    <img src="public/images/docker-kubernetes.png"  width="280">
+    <img src="public/images/amazon-partner-network-logo.jpeg" alt="" width="280">
 </div>
 <br/>
     
