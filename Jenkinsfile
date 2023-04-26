@@ -1,7 +1,7 @@
 //pas a chaque commit avant de merger
 pipeline {
     agent {
-        docker { image 'jenkins/jenkins:lts-jdk11'}
+        docker { image 'node:16-alpine' }
     }
     stages {
         // Placer les fichiers dans .
@@ -30,7 +30,7 @@ pipeline {
         //
         stage ('DockerHub') {
             steps {
-
+                sh ''
             }
         }
     }
