@@ -21,6 +21,8 @@ pipeline {
         stage ('Tests') {
             steps {
               sh './vendor/bin/phpunit tests --colors -v –testdox'
+              // quel test(s) ne marche pas
+              // relancer ce test (logs)
             }
         }
 
