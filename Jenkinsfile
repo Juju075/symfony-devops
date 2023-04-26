@@ -17,9 +17,17 @@ pipeline {
             }
         }
 
+        //
         stage ('Tests') {
             steps {
               sh './vendor/bin/phpunit tests --colors -v –testdox'
+            }
+        }
+
+        //
+        stage ('DockerHub') {
+            steps {
+
             }
         }
     }
