@@ -1,3 +1,4 @@
+//pas a chaque commit avant de merger
 pipeline {
     agent {
         docker { image 'jenkins/jenkins:lts-jdk11'}
