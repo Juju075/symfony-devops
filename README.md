@@ -53,7 +53,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <tr>
             <td>
             <h2>Jenkinsfile</h2>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/Jenkinsfile">📄 Pipeline script</a>
+            <a href="#">📄 Pipeline script</a>
             </td>
                 <td>
                 <h2>Dockerfile</h2>
