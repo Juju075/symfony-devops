@@ -16,12 +16,5 @@ pipeline {
                     sh 'docker-compose up -d'
             }
         }
-        //run from docker-compose
-        stage ('Run') {
-            steps {
-                sh'docker-composr run '
-            }
-        }
-
     }
 }
