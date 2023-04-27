@@ -9,7 +9,7 @@ Deployment of
     <table>
         <tr>
             <td>
-                Demo: <a href="#">symfony-devops.bempime-kheve.com</a><br>
+                Demo: <a href="#">en attente</a><br>
                 Screencast demo 1min<br> 
                 Source: <a href="https://github.com/Juju075/symfony-devops">Github repository</a> <br>
                 Source (deploy): <br>
