@@ -73,7 +73,7 @@ networks:
   api:
     driver: bridge
 
-#volumes missing mount
+#volumes missing
 # vhosts / log / webapp  |  ok html-log-vhost mounted ok | manque copy projet
 # docker.service  | mount ok / pas encore de data | 1 fichier pour API
 
