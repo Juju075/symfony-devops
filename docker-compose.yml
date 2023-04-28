@@ -16,19 +16,14 @@ services:
     ports:
       - "8080:80"
 
-    # "/path/to/volume:/mount/point"
-    # exterieur container (utilisateur client):interieur container (port expo image)
-    # on branche le conteneur au volume
-
     volumes:
       - ./webapp:/var/www/html
       - ./log:/var/log/apache2/
       - ./vhosts:/etc/apache2/sites-available/
 
-  #mounted from all application
   database:
+    container_name: app-database
     image: mysql:8.0
-    container_name: db_app
     restart: always
     env_file:
       - .env
@@ -43,14 +38,16 @@ services:
       - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-      -
+
   jenkins:
-    image: 'jenkins/jenkins:lts-jdk11'
     container_name: "jenkins"
+    image: 'jenkins/jenkins:lts-jdk11'
     # Kubernetes.ip volumes
     labels:
-      #outil kompose
+      #Kuvernetes configuration
       kompose.service.type: nodeport
+    networks:
+      - api
     ports:
       - '8080:8080'
       - '443:8443'
@@ -59,10 +56,26 @@ services:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
 
+  docker:
+    container_name: "docker"
+    image: 'docker'
+    networks:
+      - api
+    ports:
+      - '4243:32768'
+    volumes:
+      -  /lib/systemd/system/docker.service:/docker_service
+
+
 networks:
   connect:
     driver: bridge
+  api:
+    driver: bridge
 
+#volumes missing mount
+# vhosts / log / webapp  |  ok html-log-vhost mounted ok | manque copy projet
+# docker.service  | mount ok / pas encore de data | 1 fichier pour API
 
 volumes:
   webapp:
@@ -75,7 +88,7 @@ volumes:
     driver: local
   jenkins_data:
     driver: local
-    external: true
   jenkins:
     driver: local
-    external: true
+  docker.service:
+    driver: local

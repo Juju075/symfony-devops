@@ -9,15 +9,15 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     apt update && apt install -yqq zip git \
     # apt-get clean  vider cache aussi
 COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
-COPY . /var/www/html
+COPY . /var/www/
 ENV APP_ENV=prod
 #COPY .env /var/www/.env
-RUN cd /var/www/html && \
+RUN cd /var/www && \
     composer install && \
     php bin/console cache:clear && \
     php bin/console cache:warmup && \
-    chown -R www-data:www-data /var/www/html
-    #mkdir /database-app #ne voit pas ce dossier
-WORKDIR /var/www/html
+    # transfert de proprietaire copy des fichiers pas proprietaire
+    chown -R www-data:www-data /var/www
+WORKDIR /var/www/
 ENTRYPOINT ["bash", "./docker/docker.sh"]
 EXPOSE 80
