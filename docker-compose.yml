@@ -16,7 +16,7 @@ services:
       - "8080:80"
 
     volumes:
-      - ./webapp:/var/www/html
+      - ./webapp:/var/www/
       - ./log:/var/log/apache2/
       - ./vhosts:/etc/apache2/sites-available/
 
