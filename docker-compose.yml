@@ -17,7 +17,7 @@ services:
       - "8080:80"
 
     volumes:
-      - ./webapp:/var/www/html
+      - ./webapp:/var/www
       - ./log:/var/log/apache2/
       - ./vhosts:/etc/apache2/sites-available/
 
@@ -73,10 +73,13 @@ networks:
   api:
     driver: bridge
 
-#volumes missing
+# volumes missing
 # vhosts / log / webapp  |  ok html-log-vhost mounted ok | manque copy projet
-# docker.service  | mount ok / pas encore de data | 1 fichier pour API
+  # voir config apache
+  # we-app failed: port is already allocated Bind for 0.0.0.0:8080
 
+
+# docker.service  | mount ok / pas encore de data | 1 fichier pour API
 volumes:
   webapp:
     driver: local
