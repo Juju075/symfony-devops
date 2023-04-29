@@ -6,15 +6,18 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions intl && \
     curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
     mv composer.phar /usr/local/bin/composer && \
-    apt update && apt install -yqq zip git \
+    apt update && apt install -yqq zip git
 
 COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
 COPY . /var/www/html
+
 RUN composer install && \
     php bin/console cache:clear && \
     php bin/console cache:warmup && \
     chown -R www-data:www-data /var/www/html
+
 ENV APP_ENV=prod
 WORKDIR /var/www/html
 ENTRYPOINT ["bash", "/docker/symfony.sh"]
 EXPOSE 80
+
