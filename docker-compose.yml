@@ -10,8 +10,9 @@ services:
       - database
     networks:
       - connect
-    # mapper le port conteneur:au port de l'hote client
-    #machine local app:conteneur
+
+    # client ecoute : conteneur envoie
+    # [host_port]:[container_port]
     ports:
       - "8080:80"
 

@@ -9,15 +9,16 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     apt update && apt install -yqq zip git
 
 COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
-COPY . /var/www/html
+COPY . /var/www/
 
-RUN composer install && \
+RUN cd /var/www/ && \
+    composer install && \
     php bin/console cache:clear && \
     php bin/console cache:warmup && \
-    chown -R www-data:www-data /var/www/html
+    chown -R www-data:www-data /var/www
 
 ENV APP_ENV=prod
-WORKDIR /var/www/html
+WORKDIR /var/www/
 ENTRYPOINT ["bash", "/docker/symfony.sh"]
 EXPOSE 80
 
