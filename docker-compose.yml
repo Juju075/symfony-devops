@@ -16,7 +16,7 @@ services:
       - "8080:80"
 
     volumes:
-      - ./webapp:/var/www/
+      - ./webapp:/var/www/html
       - ./log:/var/log/apache2/
       - ./vhosts:/etc/apache2/sites-available/
 
@@ -48,7 +48,7 @@ services:
     networks:
       - api
     ports:
-      - '8080:8080'
+      - '8090:8088'
       - '443:8443'
       - '50000:50000'
     volumes:
@@ -62,6 +62,7 @@ services:
       - api
     ports:
       - '4243:32768'
+    # (logs) mount: permission denied (are you root?)
     volumes:
       -  /lib/systemd/system/docker.service:/docker_service
 
