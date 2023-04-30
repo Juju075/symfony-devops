@@ -55,13 +55,15 @@ services:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
 
-  # (logs) mount: permission denied (are you root?)
+  # Passthrough /lib/modules into the container (-v /lib/modules:/lib/modules)
   docker:
     container_name: "docker"
     build:
       context: ./docker/
       dockerfile: dockerDockerfile1
-    #image: 'docker'
+    privileged: true
+    cap_add:
+      - 'ALL'
     networks:
       - api
     ports:
