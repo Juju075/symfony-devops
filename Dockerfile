@@ -19,6 +19,6 @@ RUN cd /var/www/ && \
 
 ENV APP_ENV=prod
 WORKDIR /var/www/
-ENTRYPOINT ["bash", "/docker/symfony.sh"]
+ENTRYPOINT ["bash", "./docker/symfony.sh"]
 EXPOSE 80
 

@@ -14,12 +14,11 @@ services:
     # client ecoute : conteneur envoie
     # [host_port]:[container_port]
     ports:
-      - "8080:80"
-
+      - '8090:8088'
     volumes:
-      - ./webapp:/var/www/html
-      - ./log:/var/log/apache2/
-      - ./vhosts:/etc/apache2/sites-available/
+      - webapp:/var/www/
+      - log:/var/log/apache2/
+      - vhosts:/etc/apache2/sites-available/
 
   database:
     container_name: app-database
@@ -49,24 +48,27 @@ services:
     networks:
       - api
     ports:
-      - '8090:8088'
+      - "8080:80"
       - '443:8443'
       - '50000:50000'
     volumes:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
 
+  # (logs) mount: permission denied (are you root?)
   docker:
     container_name: "docker"
-    image: 'docker'
+    build:
+      context: ./docker/
+      dockerfile: dockerDockerfile1
+    #image: 'docker'
     networks:
       - api
     ports:
       - '4243:32768'
-    # (logs) mount: permission denied (are you root?)
+    # copy coller le fichier source ajouter un context?
     volumes:
-      -  /lib/systemd/system/docker.service:/docker_service
-
+      -  docker-service:/lib/systemd/system/
 
 networks:
   connect:
@@ -74,25 +76,22 @@ networks:
   api:
     driver: bridge
 
-# volumes missing
-# vhosts / log / webapp  |  ok html-log-vhost mounted ok | manque copy projet
-  # voir config apache
-  # we-app failed: port is already allocated Bind for 0.0.0.0:8080
-
-
-# docker.service  | mount ok / pas encore de data | 1 fichier pour API
 volumes:
+
   webapp:
     driver: local
   log:
     driver: local
   vhosts:
     driver: local
+
   db-data:
     driver: local
+
   jenkins_data:
     driver: local
   jenkins:
     driver: local
-  docker.service:
+
+  docker-service:
     driver: local

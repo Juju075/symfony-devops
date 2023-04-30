@@ -1,0 +1,5 @@
+FROM docker:latest
+LABEL "processus"="start"
+WORKDIR .
+COPY ./docker/dockerDockerfile1 /lib/systemd/system/
+EXPOSE '4243'
