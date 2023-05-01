@@ -19,7 +19,8 @@ Deployment of
             <td>
                 <em>
                 </em>
-                <p>Composed by 4 containers:</p>
+                <div align="center"><p>Composed by 4 containers:</p></div>
+                
                 <ul>
                     <li>App container with the 8.1 version of PHP .</li>
                     <li>App container with the 8.1 version of PHP .</li>
