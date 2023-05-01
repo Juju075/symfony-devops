@@ -55,7 +55,6 @@ services:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
 
-  # Passthrough /lib/modules into the container (-v /lib/modules:/lib/modules)
   docker:
     container_name: "docker"
     build:

@@ -1,11 +1,10 @@
-# Docker + PHP8.1.0 + Mysql 8 + Jenkins + Kubernetes
+# Symfony 6 + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Kubernetes + AWS
+
 Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
 ### Project in progress... Pipeline building <br><br>
-
-a
 
 <div align="center">
     <table>
@@ -20,10 +19,11 @@ a
             <td>
                 <em>
                 </em>
-                <p>Composed by 3 containers:</p>
-                <p>1-Symfony app container with the 8.1 version of PHP .</p>
+                <p>Composed by 4 containers:</p>
+                <p>1-App container with the 8.1 version of PHP .</p>
                 <p>2-Database container with a MySQL 8.0 image.</p>
                 <p>3-Jenkins container.</p>
+                <p>4-Docker container.</p>
             </td>
         </tr>
     </table>

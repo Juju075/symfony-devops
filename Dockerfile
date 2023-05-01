@@ -18,8 +18,7 @@ RUN cd /var/www/ && \
     chown -R www-data:www-data /var/www
 
 ENV APP_ENV=prod
-RUN cd .
-ENTRYPOINT ["bash", "/docker/symfony.sh"]
 WORKDIR /var/www/
+ENTRYPOINT ["bash", "/docker/symfony.sh"]
 EXPOSE 80
 
