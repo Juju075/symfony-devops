@@ -14,7 +14,7 @@ services:
     # client ecoute : conteneur envoie
     # [host_port]:[container_port]
     ports:
-      - '8090:8088'
+      - '8090:80'
     volumes:
       - webapp:/var/www/
       - log:/var/log/apache2/
@@ -27,10 +27,10 @@ services:
     env_file:
       - .env
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db_app
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - connect
     ports:
@@ -45,8 +45,8 @@ services:
     labels:
       #Kuvernetes configuration
       kompose.service.type: nodeport
-    networks:
-      - api
+#    networks:
+#      - api
     ports:
       - "8080:80"
       - '443:8443'
@@ -54,27 +54,10 @@ services:
     volumes:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
-
-  docker:
-    container_name: "docker"
-    build:
-      context: ./docker/
-      dockerfile: dockerDockerfile1
-    privileged: true
-    cap_add:
-      - 'ALL'
-    networks:
-      - api
-    ports:
-      - '4243:32768'
-    # copy coller le fichier source ajouter un context?
-    volumes:
-      -  docker-service:/lib/systemd/system/
+      - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   connect:
-    driver: bridge
-  api:
     driver: bridge
 
 volumes:
