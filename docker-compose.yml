@@ -27,7 +27,7 @@ services:
     env_file:
       - .env
     environment:
-      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
@@ -56,4 +56,20 @@ services:
 networks:
   connect:
     driver: bridge
+
+volumes:
+  webapp:
+    driver: local
+  log:
+    driver: local
+  vhosts:
+    driver: local
+
+  db-data:
+    driver: local
+
+  jenkins_data:
+    driver: local
+  jenkins:
+    driver: local
 
