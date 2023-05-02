@@ -19,12 +19,11 @@ Deployment of
             <td>
                 <em>
                 </em>
-                <p>Composed by 4 containers:</p>
+                <p>Composed by 3 containers:</p>
                 <ul>
                 <li>App container with the 8.1 version of PHP .</li>
                 <li>Database container with a MySQL 8.0 image.</li>
                 <li>Jenkins container.</li>
-                <li>Docker container.</li>
                 </ul>
             </td>
         </tr>
