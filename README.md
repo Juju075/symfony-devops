@@ -21,9 +21,9 @@ Deployment of
                 </em>
                 <p>Composed by 3 containers:</p>
                 <ul>
-                <li>App container with the 8.1 version of PHP .</li>
-                <li>Database container with a MySQL 8.0 image.</li>
-                <li>Jenkins container.</li>
+                <li>web app container with PHP 8.1v .</li>
+                <li>Database container with a MySQL 8.0v.</li>
+                <li>Jenkins container with latest version.</li>
                 </ul>
             </td>
         </tr>
