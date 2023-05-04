@@ -11,10 +11,12 @@ services:
     networks:
       - connect
 
-    # client ecoute : conteneur envoie
     # [host_port]:[container_port]
     ports:
       - '8090:80'
+
+    # [hote_path]:[container or path]  inversible
+    # ? doit etre relie au projet?
     volumes:
       - webapp:/var/www/
       - log:/var/log/apache2/
@@ -25,16 +27,18 @@ services:
     image: mysql:8.0
     restart: always
     env_file:
-      - .env
+      - .env.local
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: ${DATABASE_NAME}
       MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+
     networks:
       - connect
+
     ports:
-      - "3306:3306"
+      - "3307:3307"
     volumes:
       - db-data:/var/lib/mysql
 
@@ -46,12 +50,16 @@ services:
       kompose.service.type: nodeport
     ports:
       - "8080:80"
-      - '443:8443'
+      - '443:443'
       - '50000:50000'
     volumes:
       - /srv/data/jenkins_data:/jenkins_home
       - /srv/data/jenkins:/var/jenkins_config
       - /var/run/docker.sock:/var/run/docker.sock
+
+# definissent volumes ok
+#      - jenkins_data:/jenkins_home
+#      - jenkins:/var/jenkins_config
 
 networks:
   connect:
@@ -64,6 +72,7 @@ volumes:
     driver: local
   vhosts:
     driver: local
+
 
   db-data:
     driver: local

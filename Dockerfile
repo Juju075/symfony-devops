@@ -8,7 +8,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     mv composer.phar /usr/local/bin/composer && \
     apt update && apt install -yqq zip git
 
-COPY /docker/apache.conf /etc/apache2/sites-available/000-default.conf
+COPY /docker/000-default.conf /etc/apache2/sites-available/
 COPY . /var/www/
 
 RUN cd /var/www/ && \
