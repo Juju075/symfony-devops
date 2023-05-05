@@ -152,7 +152,8 @@ Docker containers provide a level of isolation, meaning that if one container fa
 
 Overall, Docker can help to simplify the deployment process of applications by providing a consistent and portable environment, which can reduce the likelihood of issues arising and make it easier to scale applications.
 
-## The deployment process on a casual hosting platform.
+## Last step hosting your app - AWS (cluster Kubernetes)
+
 
 <br/>
 

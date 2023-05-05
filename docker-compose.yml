@@ -45,9 +45,9 @@ services:
   jenkins:
     container_name: "jenkins"
     image: 'jenkins/jenkins:lts-jdk11'
-    labels:
-      #Kuvernetes configuration
-      kompose.service.type: nodeport
+#    labels:
+#      #Kuvernetes configuration
+#      kompose.service.type: nodeport
     ports:
       - "8080:80"
       - '443:443'
