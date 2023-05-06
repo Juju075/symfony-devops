@@ -1,4 +1,4 @@
-# Symfony 6 (Monolithique) ' + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Kubernetes + AWS
+# Symfony 6 (Monolithique) + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Kubernetes + AWS
 
 Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
