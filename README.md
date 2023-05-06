@@ -4,7 +4,7 @@ Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
-### Project in progress start Kubernetes installation vagrant ... <br><br>
+### Project in progress Docker' Kubernetes ... <br><br>
 Pipeline building... Apache error
 
 <div align="center">
