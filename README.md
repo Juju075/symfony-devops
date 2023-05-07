@@ -5,7 +5,7 @@ Deployment of
 <br/>
 
 ### Project in progress Docker' Kubernetes ... <br><br>
-Pipeline building... Jenkins' server doo't start
+Pipeline building... Jetty not responding to HTTP.
 
 <div align="center">
     <table>
