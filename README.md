@@ -4,7 +4,7 @@ Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
-### Project in progress App deployment... <br><br>
+### Project in progress Hosting Jenkins on Kubernetes cluster ( AWS )... <br><br>
 Pipeline building... Jetty not responding to HTTP.
 
 <div align="center">
