@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        //
+        // conditional result true continue or false stop pipeline
         stage ('Tests') {
             steps {
               sh './vendor/bin/phpunit tests --colors -v –testdox'
@@ -28,7 +28,7 @@ pipeline {
         }
 
         //
-        stage ('Image DockerHub') {
+        stage ('Pushing image') {
             steps {
                 sh ''
             }
