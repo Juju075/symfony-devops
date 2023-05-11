@@ -28,17 +28,17 @@ pipeline {
         }
 
         //
-        stage ('DockerHub') {
+        stage ('Image DockerHub') {
             steps {
                 sh ''
             }
         }
         // jenkins in kubernetes [Kubernetes plugin]
-        stage ('deployment') {
+        stage ('Image deployment') {
             steps {}
         }
         //
-        stage ('deployment checker') {
+        stage ('valid deployment') {
             steps {}
             //cleanup
             steps {}
