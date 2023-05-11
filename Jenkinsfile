@@ -1,10 +1,10 @@
-//pas a chaque commit avant de merger
+// Avoid trigger every time
 pipeline {
     agent {
         docker { image 'node:16-alpine' }
     }
     stages {
-        // Placer les fichiers dans .
+        // Locate files in .
         stage('GitClone') {
             steps {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
