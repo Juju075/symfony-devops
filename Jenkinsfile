@@ -33,5 +33,15 @@ pipeline {
                 sh ''
             }
         }
+        // jenkins in kubernetes [Kubernetes plugin]
+        stage ('deployment') {
+            steps {}
+        }
+        //
+        stage ('deployment checker') {
+            steps {}
+            //cleanup
+            steps {}
+        }
     }
 }
