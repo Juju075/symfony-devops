@@ -1,8 +1,9 @@
 // Avoid trigger every time
 pipeline {
-    agent {
-        docker { image 'node:16-alpine' }
-    }
+//     agent {
+//         docker { image 'node:16-alpine' }
+//     }
+        agent any
     stages {
         // Locate files in .
         stage('GitClone') {
@@ -34,11 +35,16 @@ pipeline {
             }
         }
         // jenkins in kubernetes [Kubernetes plugin]
+        // kubernetes continue plugin
         stage ('Image deployment') {
-            steps {}
+            steps {
+                script{
+                    kubernetesDeploy(configs: "Deploymentservice.yml, kubeconfigId: "Kubernetes")
+                }
+            }
         }
         //
-        stage ('valid deployment') {
+        stage ('deployment validation') {
             steps {}
             //cleanup
             steps {}
