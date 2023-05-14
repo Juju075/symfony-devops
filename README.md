@@ -3,9 +3,6 @@
 Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
-<div align="center">
-    <img src="public/images/docker-kubernetes.png" >
-</div>
 
 ### Project in progress Jenkins Kubernetes Pipeline ( AWS )... <br><br>
 Pipeline building... Jetty not responding to HTTP.
