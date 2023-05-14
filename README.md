@@ -32,7 +32,7 @@ Pipeline building... Jetty not responding to HTTP.
 </div>
 <br/>
 <div align="center">
-    <img src="public/images/docker-kubernetes.png"  width="500">
+    <img src="public/images/docker-kubernetes.png" >
 </div>
 <div align="center">
     <img src="public/images/ci-cd.png" alt="image">
