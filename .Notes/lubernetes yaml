@@ -1,1 +1,75 @@
 https://www.youtube.com/watch?v=qmDzcu5uY1I
+
+
+def manifeste en informatique:
+
+
+manifestes kubernetes
+==========
+apiVersion:
+Le champ apiVersion est généralement spécifié au début du fichier de configuration YAML,
+juste en dessous du type d'objet. Il suit la syntaxe suivante : apiVersion: group/version,
+où "group" représente le groupe de ressources et "version" indique la version de l'API
+associée.
+
+
+kind:
+le champ kind est utilisé pour spécifier le type d'objet Kubernetes que vous souhaitez créer
+ou manipuler.
+=========
+
+clusters:
+
+le terme "cluster" fait référence à une section du fichier de configuration qui contient
+les informations nécessaires pour se connecter à un cluster Kubernetes spécifique.
+
+
+"server" :
+L'adresse URL de l'API server du cluster Kubernetes.
+
+"certificate-authority" :
+Le chemin vers le fichier contenant le certificat d'autorité de certification (CA) du
+cluster.
+
+"insecure-skip-tls-verify" :
+Un indicateur qui spécifie si la vérification du certificat TLS doit être désactivée.
+Cela est généralement utilisé pour les clusters de développement et n'est pas recommandé
+pour les environnements de production.
+
+"certificate-authority-data" :
+Les données du certificat d'autorité de certification (CA) encodées en base64.
+
+"tls-server-name" :
+Le nom d'hôte du serveur TLS utilisé pour vérifier le certificat du serveur.
+
+
+users:
+
+contexts:
+le champ "contexts" fait référence à une liste de contextes Kubernetes.
+Un contexte Kubernetes comprend les informations d'authentification, de cluster et de namespace nécessaires pour interagir avec un cluster Kubernetes spécifique.
+
+Chaque contexte dans la liste des "contexts" est défini avec les éléments suivants :
+
+"name" : Le nom du contexte, qui est utilisé pour l'identifier de manière unique.
+"cluster" : Le nom du cluster Kubernetes auquel le contexte est associé.
+"user" : Le nom de l'utilisateur ou des informations d'authentification utilisées pour accéder au cluster.
+"namespace" (optionnel) : Le namespace par défaut à utiliser lors des opérations sur le cluster.
+Le fichier kubeconfig peut contenir plusieurs contextes, permettant ainsi de gérer et de basculer facilement entre différents clusters Kubernetes, utilisateurs et namespaces.
+
+Lorsque vous utilisez l'outil en ligne de commande kubectl, vous pouvez spécifier le contexte à utiliser avec l'option --context ou le définir comme contexte par défaut à l'aide de la commande kubectl config use-context.
+
+En résumé, le champ "contexts" dans le fichier kubeconfig contient une liste de contextes Kubernetes, fournissant les informations nécessaires pour interagir avec différents clusters Kubernetes à l'aide de l'outil kubectl.
+
+
+
+
+
+
+
+
+current-context
+
+
+===========
+
