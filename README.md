@@ -68,6 +68,10 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
             <h2>docker-compose</h2>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">📄 docker-compose</a>
         </td>
+        <td>
+            <h2>cluster Kubernetes</h2>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/.kube/config/kubeconfig.yaml">📄 docker-compose</a>
+        </td>
         </tr>
         <tr>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">DatabaseModel</a>
