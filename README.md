@@ -69,7 +69,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
             <a href="https://github.com/Juju075/symfony-devops/blob/main/docker-compose.yml">📄 docker-compose</a>
         </td>
         <td>
-            <h2>cluster Kubernetes</h2>
+            <h2>clusters Kubernetes</h2>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/.kube/config/kubeconfig.yaml">📄 private file</a>
         </td>
         </tr>
