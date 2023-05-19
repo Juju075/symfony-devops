@@ -1,0 +1,60 @@
+# Utilisez une image PHP avec Apache comme base
+FROM php:8.1-apache
+
+#copyrigh
+LABEL bempime kheve
+
+# Set working directory of container
+WORKDIR /app
+
+# Copiez les fichiers de l'application Symfony dans le conteneur
+
+# Copy local directories to the working directory of our docker image (/app)
+COPY ../src ./src
+COPY ../public ./public
+
+# Installez les dépendances PHP nécessaires
+# Copy composer.lock and composer.json
+COPY composer.lock composer.json /app
+
+# Exécutez les commandes Symfony pour la configuration de l'application
+RUN composer install
+RUN php bin/console cache:clear
+
+# Install app dependencies > docker-compose dans le répertoire de travail du conteneur Docker.
+COPY composer.json composer.lock ./
+
+# Exécution de la commande Composer pour installer les dépendances :
+RUN composer install --no-plugins --no-scripts
+
+# Copie du reste des fichiers de l'application dans le conteneur
+# ATTENTION  Assurez-vous d'exclure les fichiers et répertoires non nécessaires pour la production,
+COPY . ./
+
+
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH .bin:$PATH
+
+VOLUMES
+
+
+#Run the build
+RUN
+
+
+
+# production environment
+FROM
+COPY
+
+
+
+
+
+# Exposez le port d'Apache
+EXPOSE 80
+
+# Démarrez le serveur Apache
+# start app
+CMD [""]
