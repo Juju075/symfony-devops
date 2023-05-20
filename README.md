@@ -57,17 +57,25 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 </div>
 <br><br>
 
-Symfony project skills
--Twig
--Doctrine
--Event et Event Dispatcher
--Routing
--Services
--Formulaires imbriquées
--Serializer
--Validators
--Webpacks (node et yarn)
-
+<table>
+    <thead>
+        <tr>
+            <p>Symfony project skills</p>
+        </tr>
+    </thead>
+    <tr>
+    <td>
+    <ul>
+        <li>Twig</li>
+        <li>Doctrine</li>
+        <li>Event et Event Dispatcher</li>
+        <li>Routing</li>
+        <li>Services</li>
+        <li>Serializer</li>
+        <li>Validators</li>
+        <li>Webpacks</li>
+    </ul>
+</table>
 <div align="center">
     <table>
         <tr>
@@ -108,12 +116,6 @@ Symfony project skills
 <a href="#">See Application online</a>
 </div>
 
-
-#### Controllers
-
-#### Entities
-
-#### Repositories
 
 <br>
 
