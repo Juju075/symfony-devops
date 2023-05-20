@@ -43,10 +43,7 @@ Pipeline building... Jetty not responding to HTTP.
 </div>
 <br/>
 <br/>
-    
 
-
-##
 <!--
 <img src="https://camo.githubusercontent.com/1286ca53c148499090f035cf8808a51d071a80bbd19e810ac18f07b635fbfb08/68747470733a2f2f636972636c6563692e636f6d2f67682f73696c617268692f73796d666f6e792d646f636b65722d63692e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/silarhi/symfony-docker-ci.svg?style=svg" style="max-width: 100%;">
 https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
@@ -117,16 +114,8 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <div align="center">
 <a href="#">See Application online</a>
 </div>
-
-
 <br>
-
 <div align="center"><img src="public/images/cicd-gotestr.png" height="250"  alt="image"></div>
-## Jenkins
-
-
-
-
 <br/>
 
 ### What i learned?
