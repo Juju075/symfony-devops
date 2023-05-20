@@ -20,7 +20,7 @@ Pipeline building... Jetty not responding to HTTP.
             <td>
                 <em>
                 </em>
-                <p>POD to deploy:</p>
+                <p>App to deploy:</p>
                 <ul>
                 <li>web app container with PHP 8.1v .</li>
                 <li>Database container with a MySQL 8.0v.</li>
