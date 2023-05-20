@@ -72,7 +72,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <li>Validators</li>
         <li>Webpacks</li>
     </ul>
-<a href="https://github.com/Juju075/php-framework">understood of symfony components check my personal php framework</a> 
+<a href="https://github.com/Juju075/php-framework">Understanding the components of Symfony, check my personal php framework</a> 
 </table>
 </div>
 <div align="center">
