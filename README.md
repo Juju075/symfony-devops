@@ -75,6 +75,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <li>Validators</li>
         <li>Webpacks</li>
     </ul>
+understood of symfony components check my personal php framework
 </table>
 </div>
 <div align="center">
