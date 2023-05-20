@@ -82,7 +82,9 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
             <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">📄 Bash init app</a>
         </td>
         <td>📄 ici</td>
-        <td>📄 Manifests</td>
+        <td>
+            <a href="https://github.com/Juju075/symfony-devops/tree/main/.kube">📄 Manifests</a>
+        </td>
         </tr>
     </table>
 </div>
