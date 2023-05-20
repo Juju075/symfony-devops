@@ -36,10 +36,11 @@ pipeline {
         }
         // jenkins in kubernetes [Kubernetes plugin]
         // kubernetes continue plugin
+
         stage ('Image deployment') {
             steps {
                 script{
-                    kubernetesDeploy(configs: "Deploymentservice.yml, kubeconfigId: "Kubernetes")
+                    kubernetesDeploy(configs: "DeploymentService.yaml, kubeconfigId: "Kubernetes")
                 }
             }
         }
