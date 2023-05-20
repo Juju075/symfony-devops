@@ -1,5 +1,8 @@
 # Symfony 6 (Monolithique) + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Kubernetes + AWS
 
+<div align="center"><a href="https://www.linkedin.com/in/bempime-kheve/"><img src="public/images/linkedinbadge.png"></a></div>
+
+
 Deployment of
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
@@ -171,8 +174,6 @@ Overall, Docker can help to simplify the deployment process of applications by p
 >
 > [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 > https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-
-<div align="center"><a href="https://www.linkedin.com/in/bempime-kheve/"><img src="public/images/linkedinbadge.png"></a></div>
 
 <a href="https://github.com/Juju075/symfony-devops#symfony-6-monolithique--php810--mysql-8--docker--jenkins--kubernetes--aws">Top of page</a>
 
