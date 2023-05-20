@@ -56,7 +56,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <a href="https://github.com/Juju075/symfony-devops#docker">Docker</a> | <a href="#">Pipeline</a> | <a href="https://github.com/Juju075/symfony-devops#the-deployment-process-on-a-casual-hosting-platform">Deployment</a> | <a href="https://github.com/Juju075/symfony-devops#other-projects">Other projects</a> |
 </div>
 <br><br>
-
+<div align="center">
 <table>
     <thead>
         <tr>
@@ -76,6 +76,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <li>Webpacks</li>
     </ul>
 </table>
+</div>
 <div align="center">
     <table>
         <tr>
