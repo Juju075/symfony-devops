@@ -109,22 +109,6 @@ Symfony project skills
 </div>
 
 
-<h3>How to benefit from PHPUnit?</h3>
-<br>
-
-Testing your code is crucial to ensure that it works as intended, meets the requirements of the end-users, <br>
-and is free of bugs and errors.<br><br>
-By catching issues early in the development process, testing can save time and resources <br><br>
-Your code can also be more maintainable and free of regression.<br>
-having a suite of automated tests that cover the functionality of your code,<br>
-you can ensure that changes made in the future do not introduce<br>
-new bugs or regressions.<br>
-Ultimately, testing is an essential part of the software development process.
-
-<iframe height="300" width="600">
-
-</iframe>
-
 #### Controllers
 
 #### Entities
