@@ -172,6 +172,8 @@ Overall, Docker can help to simplify the deployment process of applications by p
 > [Bempime KHEVE](https://www.linkedin.com/in/bempime-kheve/)<br/>
 > https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 
+<img src="public/images/linkedinbadge.png">
+
 <a href="https://github.com/Juju075/symfony-devops#symfony-6-monolithique--php810--mysql-8--docker--jenkins--kubernetes--aws">Top of page</a>
 
 # Other projects:
