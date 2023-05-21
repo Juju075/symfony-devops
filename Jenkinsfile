@@ -28,6 +28,13 @@ pipeline {
             }
         }
 
+        // code quality SonaQube
+        stage ("SonarQube") {
+            steps {
+
+            }
+        }
+
         //
         stage ('Pushing image') {
             steps {
