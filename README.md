@@ -1,4 +1,4 @@
-# Symfony 6 (Monolithique) + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Argo + Kubernetes + AWS
+# Symfony 6 (Monolithique) + PHP8.1.0 + Mysql 8 + Docker + Jenkins + Argo CD + Kubernetes + AWS
 
 <div align="center"><a href="https://www.linkedin.com/in/bempime-kheve/"><img src="public/images/linkedinbadge.png"></a></div>
 
