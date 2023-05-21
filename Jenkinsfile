@@ -35,6 +35,8 @@ pipeline {
             }
         }
 
+        //create image dockerfile
+
         //
         stage ('Pushing image') {
             steps {
