@@ -92,7 +92,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         </td>
         <td>
             <h2>clusters Kubernetes</h2>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/.kube/config/kubeconfig.yaml">📄 private file</a>
+            <a href="https://github.com/Juju075/symfony-devops/blob/main/.kube/config/kubeconfig.yaml">📄 private file for demo</a>
         </td>
         </tr>
         <tr>
