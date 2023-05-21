@@ -4,7 +4,7 @@
 
 #
 <br><br>
-<h3>Blue-Green Deployment Strategy of </h3>
+<h3><em>Blue-Green Deployment Strategy of </em></h3>
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
