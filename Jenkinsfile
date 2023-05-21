@@ -36,28 +36,11 @@ pipeline {
         }
 
         //create image dockerfile
-
         //
         stage ('Pushing image') {
             steps {
                 sh ''
             }
-        }
-        // jenkins in kubernetes [Kubernetes plugin]
-        // kubernetes continue plugin
-
-        stage ('Image deployment') {
-            steps {
-                script{
-                    kubernetesDeploy(configs: "DeploymentService.yaml, kubeconfigId: "Kubernetes")
-                }
-            }
-        }
-        //
-        stage ('deployment validation') {
-            steps {}
-            //cleanup
-            steps {}
         }
     }
 }
