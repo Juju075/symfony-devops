@@ -34,6 +34,7 @@ Pipeline building... Jetty not responding to HTTP.
         </tr>
     </table>
 </div>
+[video to gif converter here]
 <br/>
 <div align="center">
     <img src="public/images/docker-kubernetes.png" >
