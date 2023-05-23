@@ -9,7 +9,7 @@
 <div align="center"><img src="public/images/symfony-devops.png" alt="image"></div>
 <br/>
 
-### Project in progress Jenkins Kubernetes Pipeline ( AWS )... <br><br>
+### Project in progress Jenkins Pipeline & Argo settings ( AWS )... <br><br>
 Pipeline building... Jetty not responding to HTTP.
 
 <div align="center">
