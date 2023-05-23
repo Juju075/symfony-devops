@@ -13,6 +13,7 @@ pipeline {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
             }
         }
+
         //2- build app | Caching data for containers
         stage ('dc-up') {
             steps {
