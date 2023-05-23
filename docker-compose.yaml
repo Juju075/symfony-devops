@@ -13,10 +13,8 @@ services:
 
     # [host_port]:[container_port]
     ports:
-      - '8090:80'
+      - '8080:80'
 
-    # [hote_path]:[container or path]  inversible
-    # ? doit etre relie au projet?
     volumes:
       - webapp:/var/www/
       - log:/var/log/apache2/
@@ -36,30 +34,10 @@ services:
 
     networks:
       - connect
-
     ports:
-      - "3307:3307"
+      - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-
-  jenkins:
-    container_name: "jenkins"
-    image: 'jenkins/jenkins:lts-jdk11'
-    #    labels:
-    #      #Kuvernetes configuration
-    #      kompose.service.type: nodeport
-    ports:
-      - "8080:80"
-      - '443:443'
-      - '50000:50000'
-    volumes:
-      - /srv/data/jenkins_data:/jenkins_home
-      - /srv/data/jenkins:/var/jenkins_config
-      - /var/run/docker.sock:/var/run/docker.sock
-
-# definissent volumes ok
-#      - jenkins_data:/jenkins_home
-#      - jenkins:/var/jenkins_config
 
 networks:
   connect:
@@ -75,9 +53,4 @@ volumes:
 
 
   db-data:
-    driver: local
-
-  jenkins_data:
-    driver: local
-  jenkins:
     driver: local
