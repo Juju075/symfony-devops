@@ -70,6 +70,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         <li>Routing</li>
         <li>Services</li>
         <li>Serializer</li>
+        <li>Embed Forms</li>
         <li>Validators</li>
         <li>Webpacks</li>
     </ul>
