@@ -108,7 +108,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         </td>
         <td>📄 ici</td>
         <td>
-            <a href="https://github.com/Juju075/symfony-devops/tree/main/.kube/manifests">📄 State Repository</a>
+            <a href="https://github.com/Juju075/symfony-devops/tree/main/.kube/manifests">📄 Manifests</a>
         </td>
         </tr>
     </table>
