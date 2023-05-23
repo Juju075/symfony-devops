@@ -7,7 +7,7 @@ pipeline {
         agent any
 
     stages {
-        //1- chekcout the source code  | Locate files in .
+        //1- checkout the source code  | Locate files in .
         stage('GitClone') {
             steps {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
