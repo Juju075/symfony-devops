@@ -2,6 +2,7 @@
 
 <div align="center"><a href="https://www.linkedin.com/in/bempime-kheve/"><img src="public/images/linkedinbadge.png"></a></div>
 <p>[Get linkedin devops certification]</p>
+
 #
 <br><br>
 <h3><em>Blue-Green Deployment Strategy of </em></h3>
