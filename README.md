@@ -29,7 +29,6 @@ Pipeline building... Jetty not responding to HTTP.
                 <ul>
                 <li>web app container with PHP 8.1v .</li>
                 <li>Database container with a MySQL 8.0v.</li>
-                <li>Jenkins container with latest version.</li>
                 </ul>
             </td>
         </tr>
