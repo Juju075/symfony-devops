@@ -10,7 +10,7 @@
 <br/>
 
 ### Project in progress Jenkins Pipeline & Argo settings ( AWS )... <br><br>
-Pipeline building... Jetty not responding to HTTP.
+Issues...
 
 <div align="center">
     <table>
