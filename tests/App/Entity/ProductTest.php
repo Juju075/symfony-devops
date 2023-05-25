@@ -2,10 +2,13 @@
 
 namespace App\Entity;
 
+use App\Entity\Product;
 use PHPUnit\Framework\TestCase;
 
 class ProductTest extends TestCase
 {
+    private Product $product;
+
     public function setUp(): void
     {
 

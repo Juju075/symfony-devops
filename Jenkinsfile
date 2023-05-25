@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage ('dc-up') {
+        stage ('Build') {
             steps {
               sh 'docker-compose up -d'
             }
@@ -27,13 +27,13 @@ pipeline {
             }
         }
 
-        stage ("SonarQube") {
+        stage ('Quality') {
             steps {
 
             }
         }
 
-        stage ('Pushing image') {
+        stage ('Package') {
             steps {
                 sh ''
             }
