@@ -7,7 +7,7 @@ pipeline {
         agent any
 
     stages {
-        stage('GitClone') {
+        stage('Repository') {
             steps {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
             }
@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage ('Tests') {
+        stage ('Test') {
             steps {
               sh './vendor/bin/phpunit tests --colors -v –testdox'
               // quel test(s) ne marche pas
