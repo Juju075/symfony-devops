@@ -10,7 +10,7 @@
 //8- Argo CD
 
 # PHP Unit
-<img src="/public/images/1280px-PHPUnit_Logo.svg.png">
+<img src="/public/images/1280px-PHPUnit_Logo.svg.png" height="90">
 
 # SonarQube
 <img src="/public/images/sonarqube-logo-square-small.png">
