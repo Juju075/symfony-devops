@@ -1,5 +1,9 @@
 https://github.com/Juju075/symfony-devops/blob/kubernetes/Jenkinsfile
 
+
+
+# Jenkins Pipeline 
+
 //1- checkout the source code  | Locate files in .<br>
 //2- build app | Caching data for containers<br>
 //3- run unit tests | conditional result true continue or false stop pipeline<br>
@@ -8,8 +12,6 @@ https://github.com/Juju075/symfony-devops/blob/kubernetes/Jenkinsfile
 //6- deploy app to test env<br>
 //7-<br>
 //8- Argo CD<br>
-
-# Jenkins Pipeline 
 
 # PHP Unit
 <img src="/public/images/1280px-PHPUnit_Logo.svg.png" height="90">
