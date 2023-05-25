@@ -54,34 +54,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <a href="https://github.com/Juju075/symfony-devops#docker">Docker</a> | <a href="#">Pipeline</a> | <a href="https://github.com/Juju075/symfony-devops#the-deployment-process-on-a-casual-hosting-platform">Deployment</a> | <a href="https://github.com/Juju075/symfony-devops#other-projects">Other projects</a> |
 </div>
 <br><br>
-<div align="center">
-<table>
-    <thead>
-        <tr>
-            <p>Symfony project skills</p>
-        </tr>
-    </thead>
-    <tr>
-    <td>
-    <ul>
-        <li>Twig</li>
-        <li>Doctrine</li>
-        <li>Event et Event Dispatcher</li>
-        <li>Routing</li>
-        <li>Services</li>
-        <li>Serializer</li>
-        <li>Embedded Forms</li>
-        <li>Validators</li>
-        <li>Webpacks</li>
-    </ul>
-<a href="https://github.com/Juju075/php-framework">Understanding the components of Symfony, check my personal php framework</a> 
-</table>
-</div>
 
-
-# Unit Tests
-
-<a href="https://github.com/Juju075/symfony-devops/tree/main/tests/App">All units tests</a>
 
 <div align="center">
     <table>
@@ -125,6 +98,37 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 <br>
 <div align="center"><img src="public/images/cicd-gotestr.png" height="250"  alt="image"></div>
 <br/>
+
+<div align="center">
+<table>
+    <thead>
+        <tr>
+            <p>Symfony project skills</p>
+        </tr>
+    </thead>
+    <tr>
+    <td>
+    <ul>
+        <li>Twig</li>
+        <li>Doctrine</li>
+        <li>Event et Event Dispatcher</li>
+        <li>Routing</li>
+        <li>Services</li>
+        <li>Serializer</li>
+        <li>Embedded Forms</li>
+        <li>Validators</li>
+        <li>Webpacks</li>
+    </ul>
+<a href="https://github.com/Juju075/php-framework">Understanding the components of Symfony, check my personal php framework</a> 
+</table>
+</div>
+
+
+# Unit Tests
+
+<a href="https://github.com/Juju075/symfony-devops/tree/main/tests/App">All units tests</a>
+
+
 
 ### What i learned?
 
