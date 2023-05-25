@@ -21,4 +21,4 @@ $
 Tests architecture
 
 # SonarQube
-<img src="/public/images/sonarqube-logo-square-small.png">
+<img src="/public/images/sonarqube-logo-square-small.png" height="90">
