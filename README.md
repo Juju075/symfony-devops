@@ -81,7 +81,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
 
 # Unit Tests
 
-<a href="https://openclassrooms.com/fr/courses/4087056-testez-unitairement-votre-application-php-symfony">All units tests</a>
+<a href="https://github.com/Juju075/symfony-devops/tree/main/tests/App">All units tests</a>
 
 <div align="center">
     <table>
