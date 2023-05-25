@@ -16,5 +16,9 @@ https://github.com/Juju075/symfony-devops/blob/kubernetes/Jenkinsfile
 # PHP Unit
 <img src="/public/images/1280px-PHPUnit_Logo.svg.png" height="90">
 
+$ 
+
+Tests architecture
+
 # SonarQube
 <img src="/public/images/sonarqube-logo-square-small.png">
