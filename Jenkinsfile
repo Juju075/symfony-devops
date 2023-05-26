@@ -39,7 +39,17 @@ pipeline {
             }
         }
 
-        //image scan
+        stage ('Image scan') {
+            steps {
+                sh ''
+            }
+        }
+          stage ('Push registry') {
+              steps {
+                  sh ''
+              }
+          }
+
 
     }
 }
