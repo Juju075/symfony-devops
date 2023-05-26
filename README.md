@@ -86,7 +86,7 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         </td>
         <td>📄 ici</td>
         <td>
-            <a href="https://github.com/Juju075/symfony-devops/tree/main/.kube/manifests">📄 Helm charts</a>
+            <a href="https://github.com/Juju075/symfony-devops/tree/main/helm-repo">📄 Helm charts</a>
         </td>
         </tr>
     </table>
