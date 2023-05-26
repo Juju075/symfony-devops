@@ -50,6 +50,8 @@ pipeline {
               }
           }
 
-
+        // new stage
+        // verif docker hub depot pushed > catch name version
+        // Update deployment.yaml (image version)
     }
 }
