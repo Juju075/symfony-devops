@@ -44,6 +44,10 @@ class ProductTest extends TestCase
 
     public function testSetCategory()
     {
+        $category = new Category();
+        $category->setName();
+        $category->setSlug();
+        $category->setCategoryOrder();
 
     }
 
