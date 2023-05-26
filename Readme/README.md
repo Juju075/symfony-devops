@@ -23,3 +23,7 @@ Tests architecture
 
 # SonarQube
 <img src="/public/images/sonarqube-logo-square-small.png" height="90">
+
+# Helm charts kubernetes
+
+udate manifestes
