@@ -7,7 +7,7 @@ pipeline {
         agent any
 
     stages {
-        stage('Repository') {
+        stage('Checkout') {
             steps {
               git branch: 'main', url: 'https://github.com/Juju075/symfony-devops'
             }
