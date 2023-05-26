@@ -8,8 +8,7 @@ use PHPUnit\Framework\TestCase;
 class ProductTest extends TestCase
 {
     private Product $product;
-    private  $faker;
-
+    private Faker\Generator $faker;
 
 
     public function setUp(): void
@@ -30,7 +29,7 @@ class ProductTest extends TestCase
         $expected = $this->faker->name();
         $this->product->setName($expected);
         $value = $this->product->getName();
-        $this->assertContains($expected,$value);
+        $this->assertEquals($expected,$value);
     }
 
 
@@ -39,7 +38,7 @@ class ProductTest extends TestCase
         $expected = $this->faker->name();
         $this->product->setName($expected);
         $value = $this->product->getName();
-        // assertion
+        $this->assertEquals($expected,$value);
 
     }
 
