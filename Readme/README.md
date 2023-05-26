@@ -12,9 +12,7 @@ Declarative Jenkins Pipeline (Continuous Integration multiple stages )
 //6- Image scanning
 //7- Push image registry
 //8- Helm Charts (Update)
-//9- Deploy app to test env<br>
-//10-<br>
-//8- Argo CD<br>
+
 
 # PHP Unit
 <img src="/public/images/1280px-PHPUnit_Logo.svg.png" height="80">
