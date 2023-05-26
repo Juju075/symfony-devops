@@ -10,7 +10,7 @@ Declarative Jenkins Pipeline (Continuous Integration multiple stages )
 //4- Run SonarQue | code quality SonaQube<br>
 //5- Package the app | create image dockerfile<br>
 //6- Image scanning
-//7- Push image registry
+//7- Push image in registry
 //8- Helm Charts (Update deployment.yaml manifest)
 
 
