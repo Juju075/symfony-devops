@@ -73,20 +73,20 @@ https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&l
         </td>
         <td>
             <h2>clusters Kubernetes</h2>
-            <a href="https://github.com/Juju075/symfony-devops/blob/main/.kube/config/kubeconfig.yaml">📄 private file for demo</a>
+            <a href="#">📄 ici</a>
         </td>
         </tr>
         <tr>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/UML/databaseModeling.JPG">DatabaseModel</a>
             <td>
-                <a href="">📄 Workflow</a>
+                <a href="https://github.com/Juju075/helm-repo-symfony-devops">📄 Helm charts</a>
             </td>
         <td>
             <a href="https://github.com/Juju075/symfony-devops/blob/main/docker/docker.sh">📄 Bash init app</a>
         </td>
         <td>📄 ici</td>
         <td>
-            <a href="https://github.com/Juju075/helm-repo-symfony-devops">📄 Helm charts</a>
+            ici
         </td>
         </tr>
     </table>
