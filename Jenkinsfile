@@ -44,14 +44,17 @@ pipeline {
                 sh ''
             }
         }
-          stage ('Push registry') {
-              steps {
-                  sh ''
-              }
-          }
 
-        // new stage
-        // verif docker hub depot pushed > catch name version
-        // Update deployment.yaml (image version)
+        stage ('Push registry') {
+          steps {
+              sh ''
+          }
+        }
+
+        stage ('Helm Charts') {
+          steps {
+              sh ''
+          }
+        }
     }
 }

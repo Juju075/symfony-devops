@@ -30,10 +30,6 @@ class Category
 
     use SlugTrait;
 
-
-
-
-
     // voir doc ORM
 
     #[ORM\OneToMany(mappedBy: 'parent', targetEntity: self::class)]
@@ -45,10 +41,6 @@ class Category
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')] //category
     #[ORM\JoinColumn(onDelete: 'CASCADE')]
     private ?self $parent;
-
-
-
-
 
 
     public function getId(): int
