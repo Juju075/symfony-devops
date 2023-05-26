@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/Entity",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "MONEY IS MY GAME",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
