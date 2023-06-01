@@ -1,4 +1,4 @@
-//Define the pipeline stages (like a pro) | Avoid trigger every time
+
 pipeline {
 //     agent {
 //         docker { image 'node:16-alpine' }
